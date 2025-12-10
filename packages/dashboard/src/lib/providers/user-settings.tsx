@@ -31,9 +31,9 @@ export interface UserSettings {
 }
 
 const defaultSettings: UserSettings = {
-    displayLanguage: 'en',
-    displayLocale: undefined,
-    contentLanguage: 'en',
+    displayLanguage: 'es',
+    displayLocale: "CU",
+    contentLanguage: 'es',
     theme: 'system',
     displayUiExtensionPoints: false,
     mainNavExpanded: true,
