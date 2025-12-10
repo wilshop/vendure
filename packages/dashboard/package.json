@@ -1,16 +1,16 @@
 {
-    "name": "@vendure/dashboard",
+    "name": "@wilshop/dashboard",
     "private": false,
     "version": "3.5.1",
     "type": "module",
     "repository": {
         "type": "git",
-        "url": "https://github.com/vendure-ecommerce/vendure"
+        "url": "https://github.com/wilshop/vendure"
     },
     "homepage": "https://www.vendure.io",
     "funding": "https://github.com/sponsors/michaelbromley",
     "publishConfig": {
-        "access": "public"
+        "registry": "https://npm.pkg.github.com"
     },
     "scripts": {
         "dev": "vite",
