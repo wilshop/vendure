@@ -1,7 +1,7 @@
 {
     "name": "@wilshop/dashboard",
     "private": false,
-    "version": "3.5.1-custom.2",
+    "version": "3.5.1-custom.3",
     "type": "module",
     "repository": {
         "type": "git",
