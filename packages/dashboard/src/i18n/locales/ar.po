@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: src/lib/components/data-input/string-list-input.tsx:237
+msgid "Type and press Enter or comma to add..."
+msgstr ""
+
+#. js-lingui-explicit-id
 #: src/lib/hooks/use-extended-detail-query.ts:23
 #: src/lib/hooks/use-extended-list-query.ts:64
 msgid "Query extension error"
@@ -1054,15 +1059,11 @@ msgstr "المسؤولون"
 msgid "after"
 msgstr "بعد"
 
-#: src/lib/components/shared/alerts.tsx:33
-msgid "Alerts"
-msgstr "التنبيهات"
-
 #: src/app/routes/_authenticated/_system/healthchecks.tsx:66
 msgid "All resources are up and running"
 msgstr "جميع الموارد تعمل بشكل جيد"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:411
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:412
 msgid "Allocated"
 msgstr "مخصص"
 
@@ -1144,7 +1145,7 @@ msgstr "هل أنت متأكد من مغادرة هذه الصفحة؟ سيتم 
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:51
 msgid "Are you sure you want to remove {0} {1} from this zone?"
-msgstr "هل أنت متأكد أنك تريد إزالة {0} {1} من هذه المنطقة؟"
+msgstr ""
 
 #. placeholder {0}: selection.length
 #: src/lib/components/shared/remove-from-channel-bulk-action.tsx:84
@@ -1155,7 +1156,7 @@ msgstr "هل أنت متأكد من إزالة {0} {entityType} من القنا�
 #: src/app/routes/_authenticated/_assets/assets.tsx:9
 #: src/app/routes/_authenticated/_assets/assets.tsx:30
 #: src/app/routes/_authenticated/_collections/collections_.$id.tsx:198
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:443
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:444
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:208
 msgid "Assets"
 msgstr "الملفات"
@@ -1190,7 +1191,7 @@ msgstr "العملات المتاحة"
 msgid "Available languages"
 msgstr "اللغات المتاحة"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:345
+#: src/lib/components/layout/manage-languages-dialog.tsx:322
 msgid "Available Languages"
 msgstr "اللغات المتاحة"
 
@@ -1256,7 +1257,7 @@ msgstr "الحاسبة"
 #: src/lib/components/data-table/use-generated-columns.tsx:359
 #: src/lib/components/data-table/views-sheet.tsx:217
 #: src/lib/components/data-table/views-sheet.tsx:295
-#: src/lib/components/layout/manage-languages-dialog.tsx:400
+#: src/lib/components/layout/manage-languages-dialog.tsx:377
 #: src/lib/components/shared/asset/asset-focal-point-editor.tsx:88
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:122
 #: src/lib/components/shared/confirmation-dialog.tsx:43
@@ -1291,7 +1292,7 @@ msgstr "القناة"
 msgid "Channel defaults"
 msgstr "الإعدادات الافتراضية للقناة"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:328
+#: src/lib/components/layout/manage-languages-dialog.tsx:305
 msgid "Channel Languages"
 msgstr "لغات القناة"
 
@@ -1332,7 +1333,6 @@ msgstr "انقر على \"تشغيل الاختبار\" لاختبار طريق�
 
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:136
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:114
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:141
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:130
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:157
@@ -1378,7 +1378,7 @@ msgstr "إكمال المسودة"
 msgid "Conditions"
 msgstr "الشروط"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:266
+#: src/lib/components/layout/manage-languages-dialog.tsx:243
 msgid "Configure available languages for your store and channels"
 msgstr "تكوين اللغات المتاحة لمتجرك وقنواتك"
 
@@ -1452,7 +1452,7 @@ msgstr "تم تعيين رمز القسيمة للطلب"
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:102
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:200
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -1625,7 +1625,7 @@ msgstr "العملة الافتراضية"
 msgid "Default language"
 msgstr "اللغة الافتراضية"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:373
+#: src/lib/components/layout/manage-languages-dialog.tsx:350
 msgid "Default Language"
 msgstr "اللغة الافتراضية"
 
@@ -1731,7 +1731,7 @@ msgstr "الخصم"
 msgid "Display language"
 msgstr "لغة العرض"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:344
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:345
 msgid "Do not track"
 msgstr "عدم التتبع"
 
@@ -1867,7 +1867,7 @@ msgstr "تمكين"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:96
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:140
 #: src/app/routes/_authenticated/_payment-methods/payment-methods.tsx:43
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:226
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:121
 #: src/app/routes/_authenticated/_promotions/promotions_.$id.tsx:146
 #: src/app/routes/_authenticated/_system/scheduled-tasks.tsx:113
@@ -1958,7 +1958,7 @@ msgstr "الخاصية"
 msgid "Facet values"
 msgstr "قيم الخصائص"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:426
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:427
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:199
 msgid "Facet Values"
 msgstr "قيم الخصائص"
@@ -2066,7 +2066,7 @@ msgstr "فشل إنشاء مجموعة خيارات المنتج"
 msgid "Failed to create product options"
 msgstr "فشل إنشاء خيارات المنتج"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:174
 msgid "Failed to create product variant"
 msgstr "فشل إنشاء شكل المنتج"
@@ -2147,7 +2147,7 @@ msgstr "فشل نسخ العرض"
 msgid "Failed to fulfill order"
 msgstr "فشل تنفيذ الطلب"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:295
+#: src/lib/components/layout/manage-languages-dialog.tsx:272
 msgid "Failed to load global settings"
 msgstr "فشل تحميل الإعدادات العامة"
 
@@ -2161,7 +2161,7 @@ msgstr "فشل نقل المجموعات"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:36
 msgid "Failed to remove countries from zone"
-msgstr "فشل في إزالة البلدان من المنطقة"
+msgstr ""
 
 #: src/app/routes/_authenticated/_customers/customers_.$id.tsx:139
 msgid "Failed to remove customer from group"
@@ -2271,7 +2271,7 @@ msgstr "فشل تحديث خيار المنتج"
 msgid "Failed to update product option group"
 msgstr "فشل تحديث مجموعة خيارات المنتج"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 msgid "Failed to update product variant"
 msgstr "فشل تحديث شكل المنتج"
 
@@ -2416,7 +2416,7 @@ msgstr "تم نقل التنفيذ"
 msgid "Full Name"
 msgstr "الاسم الكامل"
 
-#: src/lib/components/shared/custom-fields-form.tsx:100
+#: src/lib/components/shared/custom-fields-form.tsx:101
 msgid "General"
 msgstr "عام"
 
@@ -2425,7 +2425,7 @@ msgstr "عام"
 msgid "Generate slug automatically"
 msgstr "إنشاء الرابط المختصر تلقائيًا"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:275
+#: src/lib/components/layout/manage-languages-dialog.tsx:252
 msgid "Global Languages"
 msgstr "اللغات العامة"
 
@@ -2546,7 +2546,7 @@ msgstr "في"
 msgid "Inherit filters"
 msgstr "وراثة الفلاتر"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:338
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:339
 msgid "Inherit from global settings"
 msgstr "الوراثة من الإعدادات العامة"
 
@@ -2709,7 +2709,7 @@ msgstr "جارٍ تحميل العناوين..."
 msgid "Loading collections..."
 msgstr "جارٍ تحميل المجموعات..."
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:289
+#: src/lib/components/layout/manage-languages-dialog.tsx:266
 msgid "Loading global settings..."
 msgstr "جارٍ تحميل الإعدادات العامة..."
 
@@ -2757,7 +2757,7 @@ msgid "Manage Global Views"
 msgstr "إدارة العروض العامة"
 
 #: src/lib/components/layout/channel-switcher.tsx:185
-#: src/lib/components/layout/manage-languages-dialog.tsx:263
+#: src/lib/components/layout/manage-languages-dialog.tsx:240
 msgid "Manage Languages"
 msgstr "إدارة اللغات"
 
@@ -2861,7 +2861,6 @@ msgstr "عروضي المحفوظة"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:108
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:107
 #: src/app/routes/_authenticated/_customers/customers.tsx:72
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:104
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:135
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:124
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:151
@@ -2986,7 +2985,7 @@ msgstr "خيار منتج جديد"
 msgid "New product option group"
 msgstr "مجموعة خيارات منتج جديدة"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:207
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:208
 msgid "New product variant"
 msgstr "شكل منتج جديد"
 
@@ -3120,7 +3119,7 @@ msgstr "لا توجد قيم خصائص"
 msgid "No fulfillments"
 msgstr "لا توجد تنفيذات"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:359
+#: src/lib/components/layout/manage-languages-dialog.tsx:336
 msgid "No global languages configured"
 msgstr "لم يتم تكوين لغات عامة"
 
@@ -3375,7 +3374,7 @@ msgstr "الطلبات"
 msgid "Orders Summary"
 msgstr "ملخص الطلبات"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:353
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:354
 msgid "Out-of-stock threshold"
 msgstr "حد نفاد المخزون"
 
@@ -3385,7 +3384,7 @@ msgstr "حد نفاد المخزون"
 msgid "Page {0} of {1}"
 msgstr "الصفحة {0} من {1}"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:436
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:437
 msgid "Parent product"
 msgstr "المنتج الأساسي"
 
@@ -3521,14 +3520,14 @@ msgid "Preview order modifications"
 msgstr "معاينة تعديلات الطلب"
 
 #: src/app/routes/_authenticated/_orders/components/shipping-method-selector.tsx:49
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:272
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:273
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:340
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:212
 #: src/lib/components/layout/language-dialog.tsx:121
 msgid "Price"
 msgstr "السعر"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:252
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:253
 msgid "Price and tax"
 msgstr "السعر والضريبة"
 
@@ -3703,7 +3702,7 @@ msgstr "إزالة من القناة الحالية"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:49
 msgid "Remove from zone"
-msgstr "إزالة من المنطقة"
+msgstr ""
 
 #: src/app/routes/_authenticated/_products/components/create-product-options-dialog.tsx:278
 msgid "Remove group"
@@ -3721,7 +3720,7 @@ msgstr "إزالة الرابط"
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:31
 msgid "Removed {0} {1} from zone"
-msgstr "تمت إزالة {0} {1} من المنطقة"
+msgstr ""
 
 #: src/app/routes/_authenticated/_orders/components/order-modification-summary.tsx:200
 msgid "Removed coupon codes"
@@ -3797,11 +3796,11 @@ msgid "Save Address"
 msgstr "حفظ العنوان"
 
 #: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:122
-msgid "Save changes"
-msgstr "حفظ التغييرات"
+#~ msgid "Save changes"
+#~ msgstr "حفظ التغييرات"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:403
+#: src/lib/components/layout/manage-languages-dialog.tsx:380
 msgid "Save Changes"
 msgstr "حفظ التغييرات"
 
@@ -3818,7 +3817,7 @@ msgid "Save View"
 msgstr "حفظ العرض"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:403
+#: src/lib/components/layout/manage-languages-dialog.tsx:380
 msgid "Saving..."
 msgstr "جارٍ الحفظ..."
 
@@ -3952,7 +3951,7 @@ msgstr "حدد عنوانًا"
 msgid "Select an option"
 msgstr "حدد خيارًا"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:301
+#: src/lib/components/layout/manage-languages-dialog.tsx:278
 msgid "Select Available Languages"
 msgstr "تحديد اللغات المتاحة"
 
@@ -3972,7 +3971,7 @@ msgstr "اختر نطاق التاريخ"
 msgid "Select display language"
 msgstr "حدد لغة العرض"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:363
+#: src/lib/components/layout/manage-languages-dialog.tsx:340
 msgid "Select from globally available languages for this channel"
 msgstr "حدد من اللغات المتاحة عالميًا لهذه القناة"
 
@@ -4047,8 +4046,8 @@ msgstr "يعين اللغات المتاحة لجميع القنوات. يمكن
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "يحدد مستوى المخزون الذي يعتبر عنده هذا الشكل نفد من المخزون. استخدام قيمة سالبة يمكّن دعم الطلب المسبق. يمكن تجاوزه بواسطة أشكال المنتج."
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:355
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:373
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:356
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:374
 msgid "Sets the stock level at which this variant is considered to be out of stock. Using a negative value enables backorder support."
 msgstr "يحدد مستوى المخزون الذي يعتبر عنده هذا الشكل نفد من المخزون. استخدام قيمة سالبة يمكّن دعم الطلب المسبق."
 
@@ -4133,7 +4132,7 @@ msgid "Sign in to access the admin dashboard"
 msgstr "سجل الدخول للوصول إلى لوحة تحكم المسؤول"
 
 #: src/app/routes/_authenticated/_orders/components/edit-order-table.tsx:96
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:245
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:246
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:334
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:195
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:209
@@ -4187,7 +4186,7 @@ msgstr "الولاية/المحافظة"
 msgid "Status"
 msgstr "الحالة"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:316
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:317
 msgid "Stock"
 msgstr "المخزون"
 
@@ -4195,12 +4194,12 @@ msgstr "المخزون"
 msgid "Stock allocated"
 msgstr "مخزون مخصص"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:396
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:397
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:353
 msgid "Stock level"
 msgstr "مستوى المخزون"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:321
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:322
 msgid "Stock levels"
 msgstr "مستويات المخزون"
 
@@ -4304,7 +4303,7 @@ msgstr "تم إنشاء مجموعة خيارات المنتج بنجاح"
 msgid "Successfully created product options"
 msgstr "تم إنشاء خيارات المنتج بنجاح"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:117
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:169
 msgid "Successfully created product variant"
 msgstr "تم إنشاء شكل المنتج بنجاح"
@@ -4422,7 +4421,7 @@ msgstr "تم تحديث خيار المنتج بنجاح"
 msgid "Successfully updated product option group"
 msgstr "تم تحديث مجموعة خيارات المنتج بنجاح"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:119
 msgid "Successfully updated product variant"
 msgstr "تم تحديث شكل المنتج بنجاح"
 
@@ -4493,7 +4492,7 @@ msgstr "أساس الضريبة"
 msgid "Tax Categories"
 msgstr "فئات الضرائب"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:257
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:258
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:137
 msgid "Tax category"
 msgstr "الفئة الضريبية"
@@ -4595,7 +4594,7 @@ msgstr "هؤلاء هم العملاء في مجموعة العملاء <0>{cust
 msgid "These are the facet values for the <0>{facetName}</0> facet."
 msgstr "هذه هي قيم الخصائص للخاصية <0>{facetName}</0>."
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:316
+#: src/lib/components/layout/manage-languages-dialog.tsx:293
 msgid "These languages will be available for all channels to use"
 msgstr "ستكون هذه اللغات متاحة لجميع القنوات للاستخدام"
 
@@ -4676,7 +4675,7 @@ msgstr "إجمالي الاسترداد:"
 msgid "Total Revenue"
 msgstr "إجمالي الإيرادات"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:341
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:342
 msgid "Track"
 msgstr "تتبع"
 
@@ -4754,7 +4753,7 @@ msgstr "غير مُتحقق منه"
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:101
 #: src/app/routes/_authenticated/_orders/components/order-line-custom-fields-form.tsx:46
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:276
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -4798,7 +4797,7 @@ msgstr "استخدام كعنوان فوترة افتراضي"
 msgid "Use as the default shipping address"
 msgstr "استخدام كعنوان شحن افتراضي"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:371
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:372
 msgid "Use global out-of-stock threshold"
 msgstr "استخدام حد نفاد المخزون العام"
 
@@ -4830,7 +4829,7 @@ msgstr "الشكل"
 msgid "Variant deleted successfully"
 msgstr "تم حذف الشكل بنجاح"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:238
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:239
 msgid "Variant name"
 msgstr "اسم المتغير"
 
@@ -4909,7 +4908,7 @@ msgstr "مرئي للعميل"
 msgid "Welcome to Vendure"
 msgstr "مرحباً بك في Vendure"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:228
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:122
 msgid "When enabled, a product is available in the shop"
 msgstr "عند التمكين، يصبح المنتج متاحًا في المتجر"
@@ -4940,11 +4939,11 @@ msgctxt "date-range"
 msgid "Yesterday"
 msgstr "أمس"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:338
+#: src/lib/components/layout/manage-languages-dialog.tsx:315
 msgid "You don't have permission to view channel settings"
 msgstr "ليس لديك إذن لعرض إعدادات القناة"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:284
+#: src/lib/components/layout/manage-languages-dialog.tsx:261
 msgid "You don't have permission to view global language settings"
 msgstr "ليس لديك إذن لعرض إعدادات اللغة العامة"
 

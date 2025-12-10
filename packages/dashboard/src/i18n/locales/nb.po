@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: src/lib/components/data-input/string-list-input.tsx:237
+msgid "Type and press Enter or comma to add..."
+msgstr "Skriv og trykk Enter eller komma for å legge til..."
+
+#. js-lingui-explicit-id
 #: src/lib/hooks/use-extended-detail-query.ts:23
 #: src/lib/hooks/use-extended-list-query.ts:64
 msgid "Query extension error"
@@ -220,11 +225,6 @@ msgstr "Bestillingsoversikt-widget"
 #: src/lib/framework/alert/search-index-buffer-alert/search-index-buffer-alert.ts:35
 msgid "Running pending search index updates"
 msgstr "Kjører ventende søkeindeksoppdateringer"
-
-#. js-lingui-explicit-id
-#: src/lib/components/data-input/string-list-input.tsx:237
-msgid "Type and press Enter or comma to add..."
-msgstr ""
 
 #. js-lingui-explicit-id
 #: src/i18n/common-strings.ts:7
@@ -852,10 +852,6 @@ msgstr "Legg til en annen opsjonsgruppe"
 msgid "Add asset"
 msgstr "Legg til ressurs"
 
-#: src/lib/components/layout/channel-switcher.tsx:204
-msgid "Add channel"
-msgstr ""
-
 #: src/lib/components/shared/rich-text-editor/table-edit-icons.tsx:151
 msgid "Add column after"
 msgstr "Legg til kolonne etter"
@@ -1054,15 +1050,11 @@ msgstr "Administratorer"
 msgid "after"
 msgstr "etter"
 
-#: src/lib/components/shared/alerts.tsx:33
-msgid "Alerts"
-msgstr ""
-
 #: src/app/routes/_authenticated/_system/healthchecks.tsx:66
 msgid "All resources are up and running"
 msgstr "Alle ressurser er oppe og kjører"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:411
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:412
 msgid "Allocated"
 msgstr "Allokert"
 
@@ -1144,7 +1136,7 @@ msgstr "Er du sikker på at du vil forlate denne siden? Alle ulagrede endringer 
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:51
 msgid "Are you sure you want to remove {0} {1} from this zone?"
-msgstr ""
+msgstr "Er du sikker på at du vil fjerne {0} {1} fra denne sonen?"
 
 #. placeholder {0}: selection.length
 #: src/lib/components/shared/remove-from-channel-bulk-action.tsx:84
@@ -1155,7 +1147,7 @@ msgstr "Er du sikker på at du vil fjerne {0} {entityType} fra gjeldende kanal?"
 #: src/app/routes/_authenticated/_assets/assets.tsx:9
 #: src/app/routes/_authenticated/_assets/assets.tsx:30
 #: src/app/routes/_authenticated/_collections/collections_.$id.tsx:198
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:443
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:444
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:208
 msgid "Assets"
 msgstr "Ressurser"
@@ -1190,7 +1182,7 @@ msgstr "Tilgjengelige valutaer"
 msgid "Available languages"
 msgstr "Tilgjengelige språk"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:345
+#: src/lib/components/layout/manage-languages-dialog.tsx:322
 msgid "Available Languages"
 msgstr "Tilgjengelige språk"
 
@@ -1256,7 +1248,7 @@ msgstr "Kalkulator"
 #: src/lib/components/data-table/use-generated-columns.tsx:359
 #: src/lib/components/data-table/views-sheet.tsx:217
 #: src/lib/components/data-table/views-sheet.tsx:295
-#: src/lib/components/layout/manage-languages-dialog.tsx:400
+#: src/lib/components/layout/manage-languages-dialog.tsx:377
 #: src/lib/components/shared/asset/asset-focal-point-editor.tsx:88
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:122
 #: src/lib/components/shared/confirmation-dialog.tsx:43
@@ -1291,7 +1283,7 @@ msgstr "Kanal"
 msgid "Channel defaults"
 msgstr "Kanalstandarder"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:328
+#: src/lib/components/layout/manage-languages-dialog.tsx:305
 msgid "Channel Languages"
 msgstr "Kanalspråk"
 
@@ -1314,7 +1306,7 @@ msgid "Clear"
 msgstr "Tøm"
 
 #: src/app/routes/_authenticated/_assets/components/asset-tag-filter.tsx:180
-#: src/lib/components/data-table/data-table.tsx:304
+#: src/lib/components/data-table/data-table.tsx:305
 msgid "Clear all"
 msgstr "Tøm alle"
 
@@ -1332,7 +1324,6 @@ msgstr "Klikk \"Kjør test\" for å teste denne fraktmetoden."
 
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:136
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:114
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:141
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:130
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:157
@@ -1378,7 +1369,7 @@ msgstr "Fullfør utkast"
 msgid "Conditions"
 msgstr "Betingelser"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:266
+#: src/lib/components/layout/manage-languages-dialog.tsx:243
 msgid "Configure available languages for your store and channels"
 msgstr "Konfigurer tilgjengelige språk for butikken og kanalene dine"
 
@@ -1452,7 +1443,7 @@ msgstr "Kupongkode satt for bestilling"
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:102
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:200
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -1625,7 +1616,7 @@ msgstr "Standardvaluta"
 msgid "Default language"
 msgstr "Standardspråk"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:373
+#: src/lib/components/layout/manage-languages-dialog.tsx:350
 msgid "Default Language"
 msgstr "Standardspråk"
 
@@ -1731,7 +1722,7 @@ msgstr "Rabatt"
 msgid "Display language"
 msgstr "Visningsspråk"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:344
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:345
 msgid "Do not track"
 msgstr "Ikke spor"
 
@@ -1867,7 +1858,7 @@ msgstr "Aktiver"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:96
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:140
 #: src/app/routes/_authenticated/_payment-methods/payment-methods.tsx:43
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:226
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:121
 #: src/app/routes/_authenticated/_promotions/promotions_.$id.tsx:146
 #: src/app/routes/_authenticated/_system/scheduled-tasks.tsx:113
@@ -1958,7 +1949,7 @@ msgstr "Fasett"
 msgid "Facet values"
 msgstr "Fasettverdier"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:426
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:427
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:199
 msgid "Facet Values"
 msgstr "Fasettverdier"
@@ -2066,7 +2057,7 @@ msgstr "Kunne ikke opprette produktalternativgruppe"
 msgid "Failed to create product options"
 msgstr "Kunne ikke opprette produktopsjoner"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:174
 msgid "Failed to create product variant"
 msgstr "Kunne ikke opprette produktvariant"
@@ -2147,7 +2138,7 @@ msgstr "Kunne ikke duplisere visning"
 msgid "Failed to fulfill order"
 msgstr "Kunne ikke oppfylle bestilling"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:295
+#: src/lib/components/layout/manage-languages-dialog.tsx:272
 msgid "Failed to load global settings"
 msgstr "Kunne ikke laste globale innstillinger"
 
@@ -2161,7 +2152,7 @@ msgstr "Kunne ikke flytte samlinger"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:36
 msgid "Failed to remove countries from zone"
-msgstr ""
+msgstr "Kunne ikke fjerne land fra sonen"
 
 #: src/app/routes/_authenticated/_customers/customers_.$id.tsx:139
 msgid "Failed to remove customer from group"
@@ -2271,7 +2262,7 @@ msgstr "Kunne ikke oppdatere produktalternativ"
 msgid "Failed to update product option group"
 msgstr "Kunne ikke oppdatere produktalternativgruppe"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 msgid "Failed to update product variant"
 msgstr "Kunne ikke oppdatere produktvariant"
 
@@ -2416,7 +2407,7 @@ msgstr "Oppfyllelse endret"
 msgid "Full Name"
 msgstr "Fullt navn"
 
-#: src/lib/components/shared/custom-fields-form.tsx:100
+#: src/lib/components/shared/custom-fields-form.tsx:101
 msgid "General"
 msgstr "Generelt"
 
@@ -2425,7 +2416,7 @@ msgstr "Generelt"
 msgid "Generate slug automatically"
 msgstr "Generer slug automatisk"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:275
+#: src/lib/components/layout/manage-languages-dialog.tsx:252
 msgid "Global Languages"
 msgstr "Globale språk"
 
@@ -2546,7 +2537,7 @@ msgstr "i"
 msgid "Inherit filters"
 msgstr "Arv filtre"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:338
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:339
 msgid "Inherit from global settings"
 msgstr "Arv fra globale innstillinger"
 
@@ -2709,7 +2700,7 @@ msgstr "Laster adresser..."
 msgid "Loading collections..."
 msgstr "Laster samlinger..."
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:289
+#: src/lib/components/layout/manage-languages-dialog.tsx:266
 msgid "Loading global settings..."
 msgstr "Laster globale innstillinger..."
 
@@ -2757,7 +2748,7 @@ msgid "Manage Global Views"
 msgstr "Administrer globale visninger"
 
 #: src/lib/components/layout/channel-switcher.tsx:185
-#: src/lib/components/layout/manage-languages-dialog.tsx:263
+#: src/lib/components/layout/manage-languages-dialog.tsx:240
 msgid "Manage Languages"
 msgstr "Administrer språk"
 
@@ -2861,7 +2852,6 @@ msgstr "Mine lagrede visninger"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:108
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:107
 #: src/app/routes/_authenticated/_customers/customers.tsx:72
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:104
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:135
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:124
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:151
@@ -2986,7 +2976,7 @@ msgstr "Ny produktopsjon"
 msgid "New product option group"
 msgstr "Ny produktopsjonsgruppe"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:207
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:208
 msgid "New product variant"
 msgstr "Ny produktvariant"
 
@@ -3083,7 +3073,7 @@ msgstr "Ingen adresse"
 msgid "No addresses found"
 msgstr "Ingen adresser funnet"
 
-#: src/lib/components/shared/alerts.tsx:45
+#: src/lib/components/shared/alerts.tsx:43
 msgid "No alerts"
 msgstr "Ingen varsler"
 
@@ -3120,7 +3110,7 @@ msgstr "Ingen fasettverdier"
 msgid "No fulfillments"
 msgstr "Ingen oppfyllelser"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:359
+#: src/lib/components/layout/manage-languages-dialog.tsx:336
 msgid "No global languages configured"
 msgstr "Ingen globale språk konfigurert"
 
@@ -3166,7 +3156,7 @@ msgstr "Ingen betaling eller refusjon nødvendig"
 msgid "No result yet"
 msgstr "Ingen resultat ennå"
 
-#: src/lib/components/data-table/data-table.tsx:365
+#: src/lib/components/data-table/data-table.tsx:366
 #: src/lib/components/shared/customer-group-selector.tsx:58
 msgid "No results"
 msgstr "Ingen resultater"
@@ -3375,7 +3365,7 @@ msgstr "Bestillinger"
 msgid "Orders Summary"
 msgstr "Bestillingsoversikt"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:353
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:354
 msgid "Out-of-stock threshold"
 msgstr "Utsolgt-terskel"
 
@@ -3385,7 +3375,7 @@ msgstr "Utsolgt-terskel"
 msgid "Page {0} of {1}"
 msgstr "Side {0} av {1}"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:436
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:437
 msgid "Parent product"
 msgstr "Overordnet produkt"
 
@@ -3521,14 +3511,14 @@ msgid "Preview order modifications"
 msgstr "Forhåndsvis bestillingsendringer"
 
 #: src/app/routes/_authenticated/_orders/components/shipping-method-selector.tsx:49
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:272
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:273
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:340
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:212
 #: src/lib/components/layout/language-dialog.tsx:121
 msgid "Price"
 msgstr "Pris"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:252
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:253
 msgid "Price and tax"
 msgstr "Pris og mva"
 
@@ -3703,7 +3693,7 @@ msgstr "Fjern fra gjeldende kanal"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:49
 msgid "Remove from zone"
-msgstr ""
+msgstr "Fjern fra sone"
 
 #: src/app/routes/_authenticated/_products/components/create-product-options-dialog.tsx:278
 msgid "Remove group"
@@ -3721,7 +3711,7 @@ msgstr "Fjern lenke"
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:31
 msgid "Removed {0} {1} from zone"
-msgstr ""
+msgstr "Fjernet {0} {1} fra sonen"
 
 #: src/app/routes/_authenticated/_orders/components/order-modification-summary.tsx:200
 msgid "Removed coupon codes"
@@ -3797,11 +3787,11 @@ msgid "Save Address"
 msgstr "Lagre adresse"
 
 #: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:122
-msgid "Save changes"
-msgstr "Lagre endringer"
+#~ msgid "Save changes"
+#~ msgstr "Lagre endringer"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:403
+#: src/lib/components/layout/manage-languages-dialog.tsx:380
 msgid "Save Changes"
 msgstr "Lagre endringer"
 
@@ -3818,7 +3808,7 @@ msgid "Save View"
 msgstr "Lagre visning"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:403
+#: src/lib/components/layout/manage-languages-dialog.tsx:380
 msgid "Saving..."
 msgstr "Lagrer..."
 
@@ -3952,7 +3942,7 @@ msgstr "Velg en adresse"
 msgid "Select an option"
 msgstr "Velg en opsjon"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:301
+#: src/lib/components/layout/manage-languages-dialog.tsx:278
 msgid "Select Available Languages"
 msgstr "Velg tilgjengelige språk"
 
@@ -3972,7 +3962,7 @@ msgstr "Velg datoperiode"
 msgid "Select display language"
 msgstr "Velg visningsspråk"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:363
+#: src/lib/components/layout/manage-languages-dialog.tsx:340
 msgid "Select from globally available languages for this channel"
 msgstr "Velg fra globalt tilgjengelige språk for denne kanalen"
 
@@ -4047,8 +4037,8 @@ msgstr "Setter språkene som er tilgjengelige for alle kanaler. Individuelle kan
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "Setter lagernivået der denne varianten anses som utsolgt. Bruk av en negativ verdi aktiverer restordrestøtte. Kan overstyres av produktvarianter."
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:355
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:373
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:356
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:374
 msgid "Sets the stock level at which this variant is considered to be out of stock. Using a negative value enables backorder support."
 msgstr "Setter lagernivået der denne varianten anses som utsolgt. Bruk av en negativ verdi aktiverer restordrestøtte."
 
@@ -4133,7 +4123,7 @@ msgid "Sign in to access the admin dashboard"
 msgstr "Logg inn for å få tilgang til administrasjonspanelet"
 
 #: src/app/routes/_authenticated/_orders/components/edit-order-table.tsx:96
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:245
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:246
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:334
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:195
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:209
@@ -4187,7 +4177,7 @@ msgstr "Stat/Fylke"
 msgid "Status"
 msgstr "Status"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:316
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:317
 msgid "Stock"
 msgstr "Lager"
 
@@ -4195,12 +4185,12 @@ msgstr "Lager"
 msgid "Stock allocated"
 msgstr "Lager allokert"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:396
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:397
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:353
 msgid "Stock level"
 msgstr "Lagernivå"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:321
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:322
 msgid "Stock levels"
 msgstr "Lagernivåer"
 
@@ -4304,7 +4294,7 @@ msgstr "Produktalternativgruppe opprettet"
 msgid "Successfully created product options"
 msgstr "Produktopsjoner opprettet"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:117
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:169
 msgid "Successfully created product variant"
 msgstr "Produktvariant opprettet"
@@ -4422,7 +4412,7 @@ msgstr "Produktalternativ oppdatert"
 msgid "Successfully updated product option group"
 msgstr "Produktalternativgruppe oppdatert"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:119
 msgid "Successfully updated product variant"
 msgstr "Produktvariant oppdatert"
 
@@ -4493,7 +4483,7 @@ msgstr "Skattegrunnlag"
 msgid "Tax Categories"
 msgstr "Skattekategorier"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:257
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:258
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:137
 msgid "Tax category"
 msgstr "Skattekategori"
@@ -4595,7 +4585,7 @@ msgstr "Dette er kundene i kundegruppen <0>{customerGroupName}</0>."
 msgid "These are the facet values for the <0>{facetName}</0> facet."
 msgstr "Dette er fasettverdiene for fasetten <0>{facetName}</0>."
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:316
+#: src/lib/components/layout/manage-languages-dialog.tsx:293
 msgid "These languages will be available for all channels to use"
 msgstr "Disse språkene vil være tilgjengelige for alle kanaler å bruke"
 
@@ -4676,7 +4666,7 @@ msgstr "Total refusjon:"
 msgid "Total Revenue"
 msgstr "Totale inntekter"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:341
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:342
 msgid "Track"
 msgstr "Spor"
 
@@ -4754,7 +4744,7 @@ msgstr "Uverifisert"
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:101
 #: src/app/routes/_authenticated/_orders/components/order-line-custom-fields-form.tsx:46
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:276
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -4798,7 +4788,7 @@ msgstr "Bruk som standard fakturaadresse"
 msgid "Use as the default shipping address"
 msgstr "Bruk som standard leveringsadresse"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:371
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:372
 msgid "Use global out-of-stock threshold"
 msgstr "Bruk global utsolgt-terskel"
 
@@ -4830,7 +4820,7 @@ msgstr "Variant"
 msgid "Variant deleted successfully"
 msgstr "Variant slettet"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:238
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:239
 msgid "Variant name"
 msgstr "Variantnavn"
 
@@ -4909,7 +4899,7 @@ msgstr "Synlig for kunde"
 msgid "Welcome to Vendure"
 msgstr "Velkommen til Vendure"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:228
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:122
 msgid "When enabled, a product is available in the shop"
 msgstr "Når aktivert, er et produkt tilgjengelig i butikken"
@@ -4940,11 +4930,11 @@ msgctxt "date-range"
 msgid "Yesterday"
 msgstr "I går"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:338
+#: src/lib/components/layout/manage-languages-dialog.tsx:315
 msgid "You don't have permission to view channel settings"
 msgstr "Du har ikke tillatelse til å se kanalinnstillinger"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:284
+#: src/lib/components/layout/manage-languages-dialog.tsx:261
 msgid "You don't have permission to view global language settings"
 msgstr "Du har ikke tillatelse til å se globale språkinnstillinger"
 

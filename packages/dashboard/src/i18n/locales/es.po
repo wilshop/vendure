@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: src/lib/components/data-input/string-list-input.tsx:237
+msgid "Type and press Enter or comma to add..."
+msgstr "Escriba y presione Enter o coma para añadir..."
+
+#. js-lingui-explicit-id
 #: src/lib/hooks/use-extended-detail-query.ts:23
 #: src/lib/hooks/use-extended-list-query.ts:64
 msgid "Query extension error"
@@ -1062,7 +1067,7 @@ msgstr ""
 msgid "All resources are up and running"
 msgstr "Todos los recursos están funcionando"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:411
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:412
 msgid "Allocated"
 msgstr "Asignado"
 
@@ -1155,7 +1160,7 @@ msgstr "¿Está seguro de que desea quitar {0} {entityType} del canal actual?"
 #: src/app/routes/_authenticated/_assets/assets.tsx:9
 #: src/app/routes/_authenticated/_assets/assets.tsx:30
 #: src/app/routes/_authenticated/_collections/collections_.$id.tsx:198
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:443
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:444
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:208
 msgid "Assets"
 msgstr "Recursos"
@@ -1332,7 +1337,6 @@ msgstr "Haga clic en \\\"Ejecutar prueba\\\" para probar este método de envío.
 
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:136
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:114
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:141
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:130
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:157
@@ -1731,7 +1735,7 @@ msgstr "Descuento"
 msgid "Display language"
 msgstr "Idioma de visualización"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:344
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:345
 msgid "Do not track"
 msgstr "No rastrear"
 
@@ -1867,7 +1871,7 @@ msgstr "Habilitar"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:96
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:140
 #: src/app/routes/_authenticated/_payment-methods/payment-methods.tsx:43
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:226
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:121
 #: src/app/routes/_authenticated/_promotions/promotions_.$id.tsx:146
 #: src/app/routes/_authenticated/_system/scheduled-tasks.tsx:113
@@ -1958,7 +1962,7 @@ msgstr "Faceta"
 msgid "Facet values"
 msgstr "Valores de faceta"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:426
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:427
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:199
 msgid "Facet Values"
 msgstr "Valores de Faceta"
@@ -2066,7 +2070,7 @@ msgstr "Error al crear el grupo de opciones de producto"
 msgid "Failed to create product options"
 msgstr "Error al crear opciones de producto"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:174
 msgid "Failed to create product variant"
 msgstr "Error al crear variante de producto"
@@ -2271,7 +2275,7 @@ msgstr "Error al actualizar la opción de producto"
 msgid "Failed to update product option group"
 msgstr "Error al actualizar el grupo de opciones de producto"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 msgid "Failed to update product variant"
 msgstr "Error al actualizar variante de producto"
 
@@ -2416,7 +2420,7 @@ msgstr "Cumplimiento transicionado"
 msgid "Full Name"
 msgstr "Nombre Completo"
 
-#: src/lib/components/shared/custom-fields-form.tsx:100
+#: src/lib/components/shared/custom-fields-form.tsx:101
 msgid "General"
 msgstr "General"
 
@@ -2546,7 +2550,7 @@ msgstr "en"
 msgid "Inherit filters"
 msgstr "Heredar filtros"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:338
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:339
 msgid "Inherit from global settings"
 msgstr "Heredar de configuración global"
 
@@ -2861,7 +2865,6 @@ msgstr "Mis Vistas Guardadas"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:108
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:107
 #: src/app/routes/_authenticated/_customers/customers.tsx:72
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:104
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:135
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:124
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:151
@@ -2986,7 +2989,7 @@ msgstr "Nueva opción de producto"
 msgid "New product option group"
 msgstr "Nuevo grupo de opciones de producto"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:207
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:208
 msgid "New product variant"
 msgstr "Nueva variante de producto"
 
@@ -3375,7 +3378,7 @@ msgstr "Pedidos"
 msgid "Orders Summary"
 msgstr "Resumen de pedidos"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:353
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:354
 msgid "Out-of-stock threshold"
 msgstr "Umbral de agotamiento"
 
@@ -3385,7 +3388,7 @@ msgstr "Umbral de agotamiento"
 msgid "Page {0} of {1}"
 msgstr "Página {0} de {1}"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:436
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:437
 msgid "Parent product"
 msgstr "Producto principal"
 
@@ -3521,14 +3524,14 @@ msgid "Preview order modifications"
 msgstr "Previsualizar modificaciones del pedido"
 
 #: src/app/routes/_authenticated/_orders/components/shipping-method-selector.tsx:49
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:272
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:273
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:340
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:212
 #: src/lib/components/layout/language-dialog.tsx:121
 msgid "Price"
 msgstr "Precio"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:252
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:253
 msgid "Price and tax"
 msgstr "Precio e impuesto"
 
@@ -3797,8 +3800,8 @@ msgid "Save Address"
 msgstr "Guardar dirección"
 
 #: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:122
-msgid "Save changes"
-msgstr "Guardar cambios"
+#~ msgid "Save changes"
+#~ msgstr "Guardar cambios"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
 #: src/lib/components/layout/manage-languages-dialog.tsx:403
@@ -4047,8 +4050,8 @@ msgstr "Establece los idiomas disponibles para todos los canales. Los canales in
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "Establece el nivel de stock en el que esta variante se considera agotada. El uso de un valor negativo habilita el soporte de pedidos pendientes. Puede ser anulado por las variantes de producto."
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:355
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:373
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:356
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:374
 msgid "Sets the stock level at which this variant is considered to be out of stock. Using a negative value enables backorder support."
 msgstr "Establece el nivel de stock en el que esta variante se considera agotada. El uso de un valor negativo habilita el soporte de pedidos pendientes."
 
@@ -4133,7 +4136,7 @@ msgid "Sign in to access the admin dashboard"
 msgstr "Inicia sesión para acceder al panel de administración"
 
 #: src/app/routes/_authenticated/_orders/components/edit-order-table.tsx:96
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:245
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:246
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:334
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:195
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:209
@@ -4187,7 +4190,7 @@ msgstr "Estado/Provincia"
 msgid "Status"
 msgstr "Estado"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:316
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:317
 msgid "Stock"
 msgstr "Stock"
 
@@ -4195,12 +4198,12 @@ msgstr "Stock"
 msgid "Stock allocated"
 msgstr "Stock asignado"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:396
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:397
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:353
 msgid "Stock level"
 msgstr "Nivel de stock"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:321
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:322
 msgid "Stock levels"
 msgstr "Niveles de stock"
 
@@ -4304,7 +4307,7 @@ msgstr "Grupo de opciones de producto creado correctamente"
 msgid "Successfully created product options"
 msgstr "Opciones de producto creadas exitosamente"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:117
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:169
 msgid "Successfully created product variant"
 msgstr "Variante de producto creada exitosamente"
@@ -4422,7 +4425,7 @@ msgstr "Opción de producto actualizada correctamente"
 msgid "Successfully updated product option group"
 msgstr "Grupo de opciones de producto actualizado correctamente"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:119
 msgid "Successfully updated product variant"
 msgstr "Variante de producto actualizada exitosamente"
 
@@ -4493,7 +4496,7 @@ msgstr "Base imponible"
 msgid "Tax Categories"
 msgstr "Categorías de impuestos"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:257
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:258
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:137
 msgid "Tax category"
 msgstr "Categoría de impuesto"
@@ -4676,7 +4679,7 @@ msgstr "Reembolso total:"
 msgid "Total Revenue"
 msgstr "Ingresos totales"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:341
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:342
 msgid "Track"
 msgstr "Rastrear"
 
@@ -4754,7 +4757,7 @@ msgstr "No verificado"
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:101
 #: src/app/routes/_authenticated/_orders/components/order-line-custom-fields-form.tsx:46
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:276
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -4798,7 +4801,7 @@ msgstr "Usar como dirección de facturación predeterminada"
 msgid "Use as the default shipping address"
 msgstr "Usar como dirección de envío predeterminada"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:371
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:372
 msgid "Use global out-of-stock threshold"
 msgstr "Usar umbral de agotamiento global"
 
@@ -4830,7 +4833,7 @@ msgstr "Variante"
 msgid "Variant deleted successfully"
 msgstr "Variante eliminada correctamente"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:238
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:239
 msgid "Variant name"
 msgstr "Nombre de la variante"
 
@@ -4909,7 +4912,7 @@ msgstr "Visible para el cliente"
 msgid "Welcome to Vendure"
 msgstr "Bienvenido a Vendure"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:228
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:122
 msgid "When enabled, a product is available in the shop"
 msgstr "Cuando está habilitado, un producto está disponible en la tienda"

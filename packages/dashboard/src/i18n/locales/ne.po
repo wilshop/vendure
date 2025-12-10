@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: src/lib/components/data-input/string-list-input.tsx:237
+msgid "Type and press Enter or comma to add..."
+msgstr "टाइप गर्नुहोस् र थप्नको लागि इन्टर वा अल्पविराम थिच्नुहोस्..."
+
+#. js-lingui-explicit-id
 #: src/lib/hooks/use-extended-detail-query.ts:23
 #: src/lib/hooks/use-extended-list-query.ts:64
 msgid "Query extension error"
@@ -220,11 +225,6 @@ msgstr "अर्डर सारांश विजेट"
 #: src/lib/framework/alert/search-index-buffer-alert/search-index-buffer-alert.ts:35
 msgid "Running pending search index updates"
 msgstr "पेन्डिङ खोज अनुक्रमणिका अद्यावधिकहरू चलाइँदै"
-
-#. js-lingui-explicit-id
-#: src/lib/components/data-input/string-list-input.tsx:237
-msgid "Type and press Enter or comma to add..."
-msgstr ""
 
 #. js-lingui-explicit-id
 #: src/i18n/common-strings.ts:7
@@ -852,10 +852,6 @@ msgstr "अर्को विकल्प समूह थप्नुहोस
 msgid "Add asset"
 msgstr "सम्पत्ति थप्नुहोस्"
 
-#: src/lib/components/layout/channel-switcher.tsx:204
-msgid "Add channel"
-msgstr ""
-
 #: src/lib/components/shared/rich-text-editor/table-edit-icons.tsx:151
 msgid "Add column after"
 msgstr "पछि स्तम्भ थप्नुहोस्"
@@ -1054,15 +1050,11 @@ msgstr "प्रशासकहरू"
 msgid "after"
 msgstr "पछि"
 
-#: src/lib/components/shared/alerts.tsx:33
-msgid "Alerts"
-msgstr ""
-
 #: src/app/routes/_authenticated/_system/healthchecks.tsx:66
 msgid "All resources are up and running"
 msgstr "सबै स्रोतहरू चलिरहेका छन्"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:411
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:412
 msgid "Allocated"
 msgstr "आवंटित"
 
@@ -1144,7 +1136,7 @@ msgstr "के तपाईं निश्चित हुनुहुन्छ
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:51
 msgid "Are you sure you want to remove {0} {1} from this zone?"
-msgstr ""
+msgstr "के तपाईं पक्का {0} {1} यस क्षेत्रबाट हटाउन चाहनुहुन्छ?"
 
 #. placeholder {0}: selection.length
 #: src/lib/components/shared/remove-from-channel-bulk-action.tsx:84
@@ -1155,7 +1147,7 @@ msgstr "के तपाईं निश्चित हुनुहुन्छ
 #: src/app/routes/_authenticated/_assets/assets.tsx:9
 #: src/app/routes/_authenticated/_assets/assets.tsx:30
 #: src/app/routes/_authenticated/_collections/collections_.$id.tsx:198
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:443
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:444
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:208
 msgid "Assets"
 msgstr "सम्पत्तिहरू"
@@ -1190,7 +1182,7 @@ msgstr "उपलब्ध मुद्राहरू"
 msgid "Available languages"
 msgstr "उपलब्ध भाषाहरू"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:345
+#: src/lib/components/layout/manage-languages-dialog.tsx:322
 msgid "Available Languages"
 msgstr "उपलब्ध भाषाहरू"
 
@@ -1256,7 +1248,7 @@ msgstr "क्याल्कुलेटर"
 #: src/lib/components/data-table/use-generated-columns.tsx:359
 #: src/lib/components/data-table/views-sheet.tsx:217
 #: src/lib/components/data-table/views-sheet.tsx:295
-#: src/lib/components/layout/manage-languages-dialog.tsx:400
+#: src/lib/components/layout/manage-languages-dialog.tsx:377
 #: src/lib/components/shared/asset/asset-focal-point-editor.tsx:88
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:122
 #: src/lib/components/shared/confirmation-dialog.tsx:43
@@ -1291,7 +1283,7 @@ msgstr "च्यानल"
 msgid "Channel defaults"
 msgstr "च्यानल पूर्वनिर्धारित"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:328
+#: src/lib/components/layout/manage-languages-dialog.tsx:305
 msgid "Channel Languages"
 msgstr "च्यानल भाषाहरू"
 
@@ -1314,7 +1306,7 @@ msgid "Clear"
 msgstr "खाली गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_assets/components/asset-tag-filter.tsx:180
-#: src/lib/components/data-table/data-table.tsx:304
+#: src/lib/components/data-table/data-table.tsx:305
 msgid "Clear all"
 msgstr "सबै खाली गर्नुहोस्"
 
@@ -1332,7 +1324,6 @@ msgstr "यो ढुवानी विधि परीक्षण गर्�
 
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:136
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:114
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:141
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:130
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:157
@@ -1378,7 +1369,7 @@ msgstr "मस्यौदा पूरा गर्नुहोस्"
 msgid "Conditions"
 msgstr "शर्तहरू"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:266
+#: src/lib/components/layout/manage-languages-dialog.tsx:243
 msgid "Configure available languages for your store and channels"
 msgstr "तपाईंको स्टोर र च्यानलहरूको लागि उपलब्ध भाषाहरू कन्फिगर गर्नुहोस्"
 
@@ -1452,7 +1443,7 @@ msgstr "अर्डरको लागि कुपन कोड सेट ग�
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:102
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:200
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -1625,7 +1616,7 @@ msgstr "पूर्वनिर्धारित मुद्रा"
 msgid "Default language"
 msgstr "पूर्वनिर्धारित भाषा"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:373
+#: src/lib/components/layout/manage-languages-dialog.tsx:350
 msgid "Default Language"
 msgstr "पूर्वनिर्धारित भाषा"
 
@@ -1731,7 +1722,7 @@ msgstr "छुट"
 msgid "Display language"
 msgstr "प्रदर्शन भाषा"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:344
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:345
 msgid "Do not track"
 msgstr "ट्र्याक नगर्नुहोस्"
 
@@ -1867,7 +1858,7 @@ msgstr "सक्षम पार्नुहोस्"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:96
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:140
 #: src/app/routes/_authenticated/_payment-methods/payment-methods.tsx:43
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:226
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:121
 #: src/app/routes/_authenticated/_promotions/promotions_.$id.tsx:146
 #: src/app/routes/_authenticated/_system/scheduled-tasks.tsx:113
@@ -1958,7 +1949,7 @@ msgstr "विशेषता"
 msgid "Facet values"
 msgstr "विशेषता मानहरू"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:426
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:427
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:199
 msgid "Facet Values"
 msgstr "विशेषता मानहरू"
@@ -2066,7 +2057,7 @@ msgstr "उत्पादन विकल्प समूह सिर्जन
 msgid "Failed to create product options"
 msgstr "उत्पादन विकल्पहरू सिर्जना गर्न असफल"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:174
 msgid "Failed to create product variant"
 msgstr "उत्पादन भेरियन्ट सिर्जना गर्न असफल"
@@ -2147,7 +2138,7 @@ msgstr "दृश्य नक्कल गर्न असफल"
 msgid "Failed to fulfill order"
 msgstr "अर्डर पूरा गर्न असफल"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:295
+#: src/lib/components/layout/manage-languages-dialog.tsx:272
 msgid "Failed to load global settings"
 msgstr "ग्लोबल सेटिङहरू लोड गर्न असफल"
 
@@ -2161,7 +2152,7 @@ msgstr "संग्रहहरू सार्न असफल"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:36
 msgid "Failed to remove countries from zone"
-msgstr ""
+msgstr "क्षेत्रबाट देशहरू हटाउन असफल भयो"
 
 #: src/app/routes/_authenticated/_customers/customers_.$id.tsx:139
 msgid "Failed to remove customer from group"
@@ -2271,7 +2262,7 @@ msgstr "उत्पादन विकल्प अद्यावधिक ग
 msgid "Failed to update product option group"
 msgstr "उत्पादन विकल्प समूह अद्यावधिक गर्न असफल"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
 msgid "Failed to update product variant"
 msgstr "उत्पादन भेरियन्ट अपडेट गर्न असफल"
 
@@ -2416,7 +2407,7 @@ msgstr "पूर्ति संक्रमण भयो"
 msgid "Full Name"
 msgstr "पूरा नाम"
 
-#: src/lib/components/shared/custom-fields-form.tsx:100
+#: src/lib/components/shared/custom-fields-form.tsx:101
 msgid "General"
 msgstr "सामान्य"
 
@@ -2425,7 +2416,7 @@ msgstr "सामान्य"
 msgid "Generate slug automatically"
 msgstr "स्लग स्वचालित रूपमा उत्पन्न गर्नुहोस्"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:275
+#: src/lib/components/layout/manage-languages-dialog.tsx:252
 msgid "Global Languages"
 msgstr "ग्लोबल भाषाहरू"
 
@@ -2546,7 +2537,7 @@ msgstr "मा"
 msgid "Inherit filters"
 msgstr "फिल्टरहरू विरासतमा प्राप्त गर्नुहोस्"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:338
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:339
 msgid "Inherit from global settings"
 msgstr "ग्लोबल सेटिङहरूबाट विरासतमा प्राप्त गर्नुहोस्"
 
@@ -2709,7 +2700,7 @@ msgstr "ठेगानाहरू लोड गर्दै..."
 msgid "Loading collections..."
 msgstr "संग्रहहरू लोड गर्दै..."
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:289
+#: src/lib/components/layout/manage-languages-dialog.tsx:266
 msgid "Loading global settings..."
 msgstr "ग्लोबल सेटिङहरू लोड गर्दै..."
 
@@ -2757,7 +2748,7 @@ msgid "Manage Global Views"
 msgstr "ग्लोबल दृश्यहरू व्यवस्थापन गर्नुहोस्"
 
 #: src/lib/components/layout/channel-switcher.tsx:185
-#: src/lib/components/layout/manage-languages-dialog.tsx:263
+#: src/lib/components/layout/manage-languages-dialog.tsx:240
 msgid "Manage Languages"
 msgstr "भाषाहरू व्यवस्थापन गर्नुहोस्"
 
@@ -2861,7 +2852,6 @@ msgstr "मेरो सुरक्षित दृश्यहरू"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:108
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:107
 #: src/app/routes/_authenticated/_customers/customers.tsx:72
-#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:104
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:135
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:124
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:151
@@ -2986,7 +2976,7 @@ msgstr "नयाँ उत्पादन विकल्प"
 msgid "New product option group"
 msgstr "नयाँ उत्पादन विकल्प समूह"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:207
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:208
 msgid "New product variant"
 msgstr "नयाँ उत्पादन भेरियन्ट"
 
@@ -3083,7 +3073,7 @@ msgstr "कुनै ठेगाना छैन"
 msgid "No addresses found"
 msgstr "कुनै ठेगानाहरू फेला परेन"
 
-#: src/lib/components/shared/alerts.tsx:45
+#: src/lib/components/shared/alerts.tsx:43
 msgid "No alerts"
 msgstr "कुनै सतर्कता छैन"
 
@@ -3120,7 +3110,7 @@ msgstr "कुनै विशेषता मानहरू छैनन्"
 msgid "No fulfillments"
 msgstr "कुनै पूर्तिहरू छैनन्"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:359
+#: src/lib/components/layout/manage-languages-dialog.tsx:336
 msgid "No global languages configured"
 msgstr "कुनै ग्लोबल भाषाहरू कन्फिगर गरिएको छैन"
 
@@ -3166,7 +3156,7 @@ msgstr "कुनै भुक्तानी वा रिफन्ड आव�
 msgid "No result yet"
 msgstr "अझै कुनै परिणाम छैन"
 
-#: src/lib/components/data-table/data-table.tsx:365
+#: src/lib/components/data-table/data-table.tsx:366
 #: src/lib/components/shared/customer-group-selector.tsx:58
 msgid "No results"
 msgstr "कुनै परिणामहरू छैनन्"
@@ -3375,7 +3365,7 @@ msgstr "अर्डरहरू"
 msgid "Orders Summary"
 msgstr "अर्डर सारांश"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:353
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:354
 msgid "Out-of-stock threshold"
 msgstr "स्टक बाहिर थ्रेसहोल्ड"
 
@@ -3385,7 +3375,7 @@ msgstr "स्टक बाहिर थ्रेसहोल्ड"
 msgid "Page {0} of {1}"
 msgstr "पृष्ठ {0} को {1}"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:436
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:437
 msgid "Parent product"
 msgstr "मुख्य उत्पादन"
 
@@ -3521,14 +3511,14 @@ msgid "Preview order modifications"
 msgstr "अर्डर परिमार्जनहरू पूर्वावलोकन गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_orders/components/shipping-method-selector.tsx:49
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:272
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:273
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:340
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:212
 #: src/lib/components/layout/language-dialog.tsx:121
 msgid "Price"
 msgstr "मूल्य"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:252
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:253
 msgid "Price and tax"
 msgstr "मूल्य र कर"
 
@@ -3703,7 +3693,7 @@ msgstr "हालको च्यानलबाट हटाउनुहोस�
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:49
 msgid "Remove from zone"
-msgstr ""
+msgstr "क्षेत्रबाट हटाउनुहोस्"
 
 #: src/app/routes/_authenticated/_products/components/create-product-options-dialog.tsx:278
 msgid "Remove group"
@@ -3721,7 +3711,7 @@ msgstr "लिङ्क हटाउनुहोस्"
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:31
 msgid "Removed {0} {1} from zone"
-msgstr ""
+msgstr "क्षेत्रबाट {0} {1} हटाइयो"
 
 #: src/app/routes/_authenticated/_orders/components/order-modification-summary.tsx:200
 msgid "Removed coupon codes"
@@ -3797,11 +3787,11 @@ msgid "Save Address"
 msgstr "ठेगाना सुरक्षित गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:122
-msgid "Save changes"
-msgstr "परिवर्तनहरू सुरक्षित गर्नुहोस्"
+#~ msgid "Save changes"
+#~ msgstr "परिवर्तनहरू सुरक्षित गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:403
+#: src/lib/components/layout/manage-languages-dialog.tsx:380
 msgid "Save Changes"
 msgstr "परिवर्तनहरू सुरक्षित गर्नुहोस्"
 
@@ -3818,7 +3808,7 @@ msgid "Save View"
 msgstr "दृश्य सुरक्षित गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:403
+#: src/lib/components/layout/manage-languages-dialog.tsx:380
 msgid "Saving..."
 msgstr "सुरक्षित गर्दै..."
 
@@ -3952,7 +3942,7 @@ msgstr "ठेगाना चयन गर्नुहोस्"
 msgid "Select an option"
 msgstr "विकल्प चयन गर्नुहोस्"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:301
+#: src/lib/components/layout/manage-languages-dialog.tsx:278
 msgid "Select Available Languages"
 msgstr "उपलब्ध भाषाहरू चयन गर्नुहोस्"
 
@@ -3972,7 +3962,7 @@ msgstr "मिति दायरा चयन गर्नुहोस्"
 msgid "Select display language"
 msgstr "प्रदर्शन भाषा चयन गर्नुहोस्"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:363
+#: src/lib/components/layout/manage-languages-dialog.tsx:340
 msgid "Select from globally available languages for this channel"
 msgstr "यस च्यानलको लागि विश्वव्यापी रूपमा उपलब्ध भाषाहरूबाट चयन गर्नुहोस्"
 
@@ -4047,8 +4037,8 @@ msgstr "सबै च्यानलहरूको लागि उपलब्
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "यो भेरियन्ट स्टक बाहिर मानिने स्टक स्तर सेट गर्दछ। नकारात्मक मान प्रयोग गर्दा ब्याकअर्डर समर्थन सक्षम हुन्छ। उत्पादन भेरियन्टहरूद्वारा ओभरराइड गर्न सकिन्छ।"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:355
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:373
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:356
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:374
 msgid "Sets the stock level at which this variant is considered to be out of stock. Using a negative value enables backorder support."
 msgstr "यो भेरियन्ट स्टक बाहिर मानिने स्टक स्तर सेट गर्दछ। नकारात्मक मान प्रयोग गर्दा ब्याकअर्डर समर्थन सक्षम हुन्छ।"
 
@@ -4133,7 +4123,7 @@ msgid "Sign in to access the admin dashboard"
 msgstr "प्रशासक ड्यासबोर्ड पहुँच गर्न साइन इन गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_orders/components/edit-order-table.tsx:96
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:245
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:246
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:334
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:195
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:209
@@ -4187,7 +4177,7 @@ msgstr "राज्य/प्रान्त"
 msgid "Status"
 msgstr "स्थिति"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:316
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:317
 msgid "Stock"
 msgstr "स्टक"
 
@@ -4195,12 +4185,12 @@ msgstr "स्टक"
 msgid "Stock allocated"
 msgstr "स्टक आवंटित गरियो"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:396
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:397
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:353
 msgid "Stock level"
 msgstr "स्टक स्तर"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:321
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:322
 msgid "Stock levels"
 msgstr "स्टक स्तरहरू"
 
@@ -4304,7 +4294,7 @@ msgstr "उत्पादन विकल्प समूह सफलताप
 msgid "Successfully created product options"
 msgstr "उत्पादन विकल्पहरू सफलतापूर्वक सिर्जना गरियो"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:117
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:169
 msgid "Successfully created product variant"
 msgstr "उत्पादन भेरियन्ट सफलतापूर्वक सिर्जना गरियो"
@@ -4422,7 +4412,7 @@ msgstr "उत्पादन विकल्प सफलतापूर्व�
 msgid "Successfully updated product option group"
 msgstr "उत्पादन विकल्प समूह सफलतापूर्वक अद्यावधिक गरियो"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:119
 msgid "Successfully updated product variant"
 msgstr "उत्पादन भेरियन्ट सफलतापूर्वक अपडेट गरियो"
 
@@ -4493,7 +4483,7 @@ msgstr "कर आधार"
 msgid "Tax Categories"
 msgstr "कर वर्गहरू"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:257
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:258
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:137
 msgid "Tax category"
 msgstr "कर वर्ग"
@@ -4595,7 +4585,7 @@ msgstr "यी <0>{customerGroupName}</0> ग्राहक समूहका 
 msgid "These are the facet values for the <0>{facetName}</0> facet."
 msgstr "यी <0>{facetName}</0> विशेषताका विशेषता मानहरू हुन्।"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:316
+#: src/lib/components/layout/manage-languages-dialog.tsx:293
 msgid "These languages will be available for all channels to use"
 msgstr "यी भाषाहरू सबै च्यानलहरूलाई प्रयोग गर्नको लागि उपलब्ध हुनेछन्"
 
@@ -4676,7 +4666,7 @@ msgstr "कुल रिफन्ड:"
 msgid "Total Revenue"
 msgstr "कुल राजस्व"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:341
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:342
 msgid "Track"
 msgstr "ट्र्याक गर्नुहोस्"
 
@@ -4754,7 +4744,7 @@ msgstr "प्रमाणित नगरिएको"
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:101
 #: src/app/routes/_authenticated/_orders/components/order-line-custom-fields-form.tsx:46
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:276
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -4798,7 +4788,7 @@ msgstr "पूर्वनिर्धारित बिलिङ ठेगा�
 msgid "Use as the default shipping address"
 msgstr "पूर्वनिर्धारित ढुवानी ठेगानाको रूपमा प्रयोग गर्नुहोस्"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:371
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:372
 msgid "Use global out-of-stock threshold"
 msgstr "ग्लोबल स्टक बाहिर थ्रेसहोल्ड प्रयोग गर्नुहोस्"
 
@@ -4830,7 +4820,7 @@ msgstr "भेरियन्ट"
 msgid "Variant deleted successfully"
 msgstr "भेरियन्ट सफलतापूर्वक मेटियो"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:238
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:239
 msgid "Variant name"
 msgstr "भिन्नता नाम"
 
@@ -4909,7 +4899,7 @@ msgstr "ग्राहकलाई देखिने"
 msgid "Welcome to Vendure"
 msgstr "Vendure मा स्वागत छ"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:228
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:122
 msgid "When enabled, a product is available in the shop"
 msgstr "सक्षम पारिएको बेला, उत्पादन पसलमा उपलब्ध हुन्छ"
@@ -4940,11 +4930,11 @@ msgctxt "date-range"
 msgid "Yesterday"
 msgstr "हिजो"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:338
+#: src/lib/components/layout/manage-languages-dialog.tsx:315
 msgid "You don't have permission to view channel settings"
 msgstr "तपाईंसँग च्यानल सेटिङहरू हेर्ने अनुमति छैन"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:284
+#: src/lib/components/layout/manage-languages-dialog.tsx:261
 msgid "You don't have permission to view global language settings"
 msgstr "तपाईंसँग ग्लोबल भाषा सेटिङहरू हेर्ने अनुमति छैन"
 
