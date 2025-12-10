@@ -10,8 +10,8 @@ import {
 } from '@/vdb/components/ui/dialog.js';
 import { api } from '@/vdb/graphql/api.js';
 import { useChannel } from '@/vdb/hooks/use-channel.js';
-import { Trans } from '@lingui/react/macro';
 import { normalizeString } from '@/vdb/lib/utils.js';
+import { Trans } from '@lingui/react/macro';
 import { useMutation } from '@tanstack/react-query';
 import { Plus } from 'lucide-react';
 import { useCallback, useState } from 'react';
@@ -143,7 +143,7 @@ export function CreateProductVariantsDialog({
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
                     <Button type="button">
-                        <Plus className="mr-2 h-4 w-4" /> Create Variants
+                        <Plus className="mr-2 h-4 w-4" /> <Trans>Create Variants</Trans>
                     </Button>
                 </DialogTrigger>
 

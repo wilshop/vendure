@@ -3241,11 +3241,11 @@ msgstr "Grupo de opciones {0}"
 
 #: src/app/routes/_authenticated/_products/components/create-product-options-dialog.tsx:267
 msgid "Option group name"
-msgstr "Nombre del grupo de opciones"
+msgstr "Nombre del grupo"
 
 #: src/app/routes/_authenticated/_products/components/option-groups-editor.tsx:81
 msgid "Option Group Name"
-msgstr "Nombre del Grupo de Opciones"
+msgstr "Nombre del Grupo"
 
 #: src/app/routes/_authenticated/_products/products_.$id_.variants.tsx:190
 msgid "Option group removed"
