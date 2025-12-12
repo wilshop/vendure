@@ -110,7 +110,7 @@ function OrderListPage() {
             }}
         >
             <PageActionBarRight>
-                <Button onClick={() => createDraftOrder({})}>
+                <Button className="cursor-pointer" onClick={() => createDraftOrder({})}>
                     <PlusIcon className="mr-2 h-4 w-4" />
                     <Trans>Draft order</Trans>
                 </Button>

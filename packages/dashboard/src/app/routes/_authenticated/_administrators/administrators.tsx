@@ -94,7 +94,7 @@ function AdministratorListPage() {
                     <Button asChild>
                         <Link to="./new">
                             <PlusIcon />
-                            New Administrator
+                            <Trans>New Administrator</Trans>
                         </Link>
                     </Button>
                 </PermissionGuard>

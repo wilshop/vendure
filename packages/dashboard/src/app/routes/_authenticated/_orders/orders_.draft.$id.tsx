@@ -304,7 +304,7 @@ function DraftOrderPage() {
                                 deleteDraftOrder({ orderId: entity.id });
                             }}
                         >
-                            <Button variant="destructive" type="button">
+                            <Button className="cursor-pointer" variant="destructive" type="button">
                                 <Trans>Delete draft</Trans>
                             </Button>
                         </ConfirmationDialog>
@@ -312,6 +312,7 @@ function DraftOrderPage() {
                     <PermissionGuard requires={['UpdateOrder']}>
                         <Button
                             type="button"
+                            className="cursor-pointer"
                             disabled={
                                 !entity.customer ||
                                 entity.lines.length === 0 ||
