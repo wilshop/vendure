@@ -2,8 +2,8 @@ import { FormFieldWrapper } from '@/vdb/components/shared/form-field-wrapper.js'
 import { Button } from '@/vdb/components/ui/button.js';
 import { Form } from '@/vdb/components/ui/form.js';
 import { Input } from '@/vdb/components/ui/input.js';
-import { Trans } from '@lingui/react/macro';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Trans } from '@lingui/react/macro';
 import { Plus, Trash2 } from 'lucide-react';
 import { useEffect } from 'react';
 import { Control, useFieldArray, useForm } from 'react-hook-form';
@@ -72,18 +72,20 @@ export function SingleOptionGroupEditor({
     });
 
     return (
-        <div className="space-y-4">
-            <div className="grid grid-cols-[1fr_2fr] gap-4 items-start">
-                <div>
+        <div className="w-full">
+            <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-[1fr_2fr] items-start">
+                <div className="w-full">
                     <FormFieldWrapper
                         control={control}
                         name={[fieldArrayPath, 'name'].join('.')}
                         label={<Trans>Option Group Name</Trans>}
-                        render={({ field }) => <Input placeholder="e.g. Size" {...field} />}
+                        render={({ field }) => (
+                            <Input placeholder="e.g. Size" className="w-full" {...field} />
+                        )}
                     />
                 </div>
 
-                <div>
+                <div className="w-full">
                     <FormFieldWrapper
                         control={control}
                         name="values"
@@ -153,24 +155,34 @@ export function OptionGroupsEditor({ onChange, initialGroups = [] }: Readonly<Op
 
     return (
         <Form {...form}>
-            <div className="space-y-4">
+            <div className="space-y-6">
                 {optionGroups.map((group, index) => (
-                    <div key={group.id} className="flex items-start">
-                        <SingleOptionGroupEditor control={control} fieldArrayPath={`optionGroups.${index}`} />
-                        <div className="shrink-0 mt-6">
+                    <div
+                        key={group.id}
+                        className="relative rounded-lg border border-border bg-card/50 p-4 pt-8 md:p-6"
+                    >
+                        <div className="absolute right-2 top-2">
                             <Button
                                 variant="ghost"
                                 size="icon"
+                                className="h-8 w-8 text-muted-foreground hover:text-destructive"
                                 onClick={() => removeOptionGroup(index)}
-                                title="Remove Option"
+                                title="Remove Option Group"
                             >
                                 <Trash2 className="h-4 w-4" />
                             </Button>
                         </div>
+
+                        <SingleOptionGroupEditor control={control} fieldArrayPath={`optionGroups.${index}`} />
                     </div>
                 ))}
 
-                <Button type="button" variant="secondary" onClick={handleAddOptionGroup}>
+                <Button
+                    type="button"
+                    variant="secondary"
+                    className="w-full md:w-auto"
+                    onClick={handleAddOptionGroup}
+                >
                     <Plus className="mr-2 h-4 w-4" />
                     <Trans>Add Option</Trans>
                 </Button>

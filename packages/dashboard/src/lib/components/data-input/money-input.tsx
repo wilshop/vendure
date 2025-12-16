@@ -6,9 +6,11 @@ import { DashboardFormComponentProps } from '@/vdb/framework/form-engine/form-en
 import { isReadonlyField } from '@/vdb/framework/form-engine/utils.js';
 import { useChannel } from '@/vdb/hooks/use-channel.js';
 import { useDisplayLocale } from '@/vdb/hooks/use-display-locale.js';
+import { cn } from '@/vdb/lib/utils.js';
 
 export interface MoneyInputProps extends DashboardFormComponentProps {
     currency?: string;
+    className?: string;
 }
 
 /**
@@ -20,7 +22,7 @@ export interface MoneyInputProps extends DashboardFormComponentProps {
  * @docsPage MoneyInput
  */
 export function MoneyInput(props: Readonly<MoneyInputProps>) {
-    const { value, onChange, currency, ...rest } = props;
+    const { value, onChange, currency, className, ...rest } = props;
     const { activeChannel } = useChannel();
     const activeCurrency = currency ?? activeChannel?.defaultCurrencyCode;
     const readOnly = isReadonlyField(props.fieldDef);
@@ -66,7 +68,7 @@ export function MoneyInput(props: Readonly<MoneyInputProps>) {
     return (
         <AffixedInput
             type="text"
-            className="bg-background"
+            className={cn("bg-background", className)}
             value={displayValue}
             disabled={readOnly}
             {...rest}

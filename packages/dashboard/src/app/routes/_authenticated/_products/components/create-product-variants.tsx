@@ -1,3 +1,4 @@
+import { MoneyInput } from '@/vdb/components/data-input/index.js';
 import { Alert, AlertDescription } from '@/vdb/components/ui/alert.js';
 import { Checkbox } from '@/vdb/components/ui/checkbox.js';
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/vdb/components/ui/form.js';
@@ -5,15 +6,15 @@ import { Input } from '@/vdb/components/ui/input.js';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/vdb/components/ui/table.js';
 import { api } from '@/vdb/graphql/api.js';
 import { graphql } from '@/vdb/graphql/graphql.js';
-import { Trans } from '@lingui/react/macro';
+import { useChannel } from '@/vdb/hooks/use-channel.js';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Trans } from '@lingui/react/macro';
 import { useQuery } from '@tanstack/react-query';
+import { MapPin, Package } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { OptionGroupConfiguration, optionGroupSchema, OptionGroupsEditor } from './option-groups-editor.js';
-import { MoneyInput } from '@/vdb/components/data-input/index.js';
-import { useChannel } from '@/vdb/hooks/use-channel.js';
 
 const getStockLocationsDocument = graphql(`
     query GetStockLocations($options: StockLocationListOptions) {
@@ -85,9 +86,9 @@ interface CreateProductVariantsProps {
 }
 
 export function CreateProductVariants({
-                                          currencyCode = 'USD',
-                                          onChange,
-                                      }: Readonly<CreateProductVariantsProps>) {
+    currencyCode = 'USD',
+    onChange,
+}: Readonly<CreateProductVariantsProps>) {
     const { data: stockLocationsResult } = useQuery({
         queryKey: ['stockLocations'],
         queryFn: () => api.query(getStockLocationsDocument, { options: { take: 100 } }),
@@ -107,10 +108,8 @@ export function CreateProductVariants({
 
     const { setValue } = form;
 
-    // memoize the variants
     const variants = useMemo(() => generateVariants(optionGroups), [JSON.stringify(optionGroups)]);
 
-    // Use the handleSubmit approach for the entire form
     useEffect(() => {
         const subscription = form.watch(value => {
             const formVariants = value?.variants || {};
@@ -142,9 +141,7 @@ export function CreateProductVariants({
         return () => subscription.unsubscribe();
     }, [form, onChange, variants, optionGroups]);
 
-    // Initialize variant form values when variants change
     useEffect(() => {
-        // Initialize any new variants with default values
         const currentVariants = form.getValues().variants || {};
         const updatedVariants = { ...currentVariants };
 
@@ -162,155 +159,205 @@ export function CreateProductVariants({
         setValue('variants', updatedVariants);
     }, [variants, form, setValue]);
 
+    const isSingleVariant = variants.length === 1;
+
     return (
         <FormProvider {...form}>
-            <div className="mb-6">
-                <OptionGroupsEditor onChange={data => setOptionGroups(data.optionGroups)} />
-            </div>
+            <div className="flex w-full flex-col space-y-6">
+                <div>
+                    <OptionGroupsEditor onChange={data => setOptionGroups(data.optionGroups)} />
+                </div>
 
-            {stockLocations.length === 0 ? (
-                <Alert variant="destructive">
-                    <AlertDescription>
-                        <Trans>No stock locations available on current channel</Trans>
-                    </AlertDescription>
-                </Alert>
-            ) : (
-                <>
-                    {stockLocations.length > 1 && (
-                        <div className="mb-4">
-                            <FormLabel>
-                                <Trans>Add Stock to Location</Trans>
-                            </FormLabel>
-                            <select className="w-full rounded-md border border-input bg-background px-3 py-2">
-                                {stockLocations.map(location => (
-                                    <option key={location.id} value={location.id}>
-                                        {location.name}
-                                    </option>
-                                ))}
-                            </select>
-                        </div>
-                    )}
+                {stockLocations.length === 0 ? (
+                    <Alert variant="destructive">
+                        <AlertDescription>
+                            <Trans>No stock locations available on current channel</Trans>
+                        </AlertDescription>
+                    </Alert>
+                ) : (
+                    <>
+                        {stockLocations.length > 1 && (
+                            <div className="flex flex-col gap-2 rounded-lg border border-border bg-muted/30 p-4">
+                                <FormLabel className="flex items-center gap-2 text-foreground">
+                                    <MapPin className="h-4 w-4" />
+                                    <Trans>Add Stock to Location</Trans>
+                                </FormLabel>
+                                <div className="relative">
+                                    <select className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                        {stockLocations.map(location => (
+                                            <option key={location.id} value={location.id}>
+                                                {location.name}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+                            </div>
+                        )}
 
-                    {variants.length > 0 && (
-                        <Table>
-                            <TableHeader>
-                                <TableRow>
-                                    {variants.length > 1 && (
-                                        <TableHead>
-                                            <Trans>Create</Trans>
-                                        </TableHead>
-                                    )}
-                                    {variants.length > 1 && (
-                                        <TableHead>
-                                            <Trans>Variant</Trans>
-                                        </TableHead>
-                                    )}
-                                    <TableHead>
-                                        <Trans>SKU</Trans>
-                                    </TableHead>
-                                    <TableHead>
-                                        <Trans>Price</Trans>
-                                    </TableHead>
-                                    <TableHead>
-                                        <Trans>Stock on Hand</Trans>
-                                    </TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {variants.map(variant => (
-                                    <TableRow key={variant.id}>
-                                        {variants.length > 1 && (
-                                            <TableCell>
-                                                <FormField
-                                                    control={form.control}
-                                                    name={`variants.${variant.id}.enabled`}
-                                                    render={({ field }) => (
-                                                        <FormItem className="flex items-center space-x-2">
-                                                            <FormControl>
-                                                                <Checkbox
-                                                                    defaultChecked={true}
-                                                                    checked={field.value}
-                                                                    onCheckedChange={field.onChange}
-                                                                />
-                                                            </FormControl>
-                                                        </FormItem>
+                        {variants.length > 0 && (
+                            <div className="space-y-3">
+                                <div className="flex items-center gap-2">
+                                    <Package className="h-4 w-4 text-muted-foreground" />
+                                    <h3 className="text-sm font-medium text-foreground">
+                                        {isSingleVariant ? (
+                                            <Trans>Default Variant</Trans>
+                                        ) : (
+                                            <>
+                                                <Trans>Generated Variants</Trans> ({variants.length})
+                                            </>
+                                        )}
+                                    </h3>
+                                </div>
+
+                                {/* FIX: Use Grid to contain the Table overflow */}
+                                {/* grid-cols-1 forces the children to fit within the grid track, enabling overflow to work */}
+                                <div className="grid w-full grid-cols-1 rounded-md border border-border">
+                                    {/* Height constraint wrapper */}
+                                    <div className="max-h-[400px] w-full overflow-y-auto">
+                                        {/* The Table component already has a wrapper with `w-full overflow-auto`.
+                                            The grid parent above ensures that `w-full` resolves to the modal width,
+                                            not the content width. */}
+                                        <Table>
+                                            <TableHeader>
+                                                <TableRow>
+                                                    {!isSingleVariant && (
+                                                        <TableHead className="w-[50px] whitespace-nowrap text-center">
+                                                            <Trans>On</Trans>
+                                                        </TableHead>
                                                     )}
-                                                />
-                                            </TableCell>
-                                        )}
-
-                                        {variants.length > 1 && (
-                                            <TableCell>{variant.values.join(' ')}</TableCell>
-                                        )}
-
-                                        <TableCell>
-                                            <FormField
-                                                control={form.control}
-                                                name={`variants.${variant.id}.sku`}
-                                                render={({ field }) => (
-                                                    <FormItem>
-                                                        <FormControl>
-                                                            <Input {...field} placeholder="SKU" />
-                                                        </FormControl>
-                                                        <FormMessage />
-                                                    </FormItem>
-                                                )}
-                                            />
-                                        </TableCell>
-
-                                        <TableCell>
-                                            <FormField
-                                                control={form.control}
-                                                name={`variants.${variant.id}.price`}
-                                                render={({ field }) => (
-                                                    <FormItem>
-                                                        <FormControl>
-                                                                <MoneyInput
-                                                                    {...field}
-                                                                    value={Number(field.value) || 0}
-                                                                    onChange={value => field.onChange(value.toString())}
-                                                                    currency={activeChannel?.defaultCurrencyCode}
+                                                    {!isSingleVariant && (
+                                                        <TableHead className="min-w-[150px] whitespace-nowrap">
+                                                            <Trans>Variant</Trans>
+                                                        </TableHead>
+                                                    )}
+                                                    {/* We enforce min-w here to ensure the table WANTS to be wide */}
+                                                    <TableHead className="min-w-[140px]">
+                                                        <Trans>SKU</Trans>
+                                                    </TableHead>
+                                                    <TableHead className="min-w-[140px]">
+                                                        <Trans>Price</Trans>
+                                                    </TableHead>
+                                                    <TableHead className="min-w-[100px]">
+                                                        <Trans>Stock</Trans>
+                                                    </TableHead>
+                                                </TableRow>
+                                            </TableHeader>
+                                            <TableBody>
+                                                {variants.map(variant => (
+                                                    <TableRow key={variant.id} className="hover:bg-muted/30">
+                                                        {!isSingleVariant && (
+                                                            <TableCell className="text-center">
+                                                                <FormField
+                                                                    control={form.control}
+                                                                    name={`variants.${variant.id}.enabled`}
+                                                                    render={({ field }) => (
+                                                                        <FormItem className="flex items-center justify-center space-y-0">
+                                                                            <FormControl>
+                                                                                <Checkbox
+                                                                                    checked={field.value}
+                                                                                    onCheckedChange={
+                                                                                        field.onChange
+                                                                                    }
+                                                                                />
+                                                                            </FormControl>
+                                                                        </FormItem>
+                                                                    )}
                                                                 />
-                                                        </FormControl>
-                                                        <FormMessage />
-                                                    </FormItem>
-                                                )}
-                                            />
-                                        </TableCell>
+                                                            </TableCell>
+                                                        )}
 
-                                        <TableCell>
-                                            <FormField
-                                                control={form.control}
-                                                name={`variants.${variant.id}.stock`}
-                                                render={({ field }) => (
-                                                    <FormItem>
-                                                        <FormControl>
-                                                            <Input
-                                                                {...field}
-                                                                type="number"
-                                                                min="0"
-                                                                step="1"
+                                                        {!isSingleVariant && (
+                                                            <TableCell className="whitespace-nowrap font-medium text-sm">
+                                                                {variant.values.join(' / ')}
+                                                            </TableCell>
+                                                        )}
+
+                                                        <TableCell>
+                                                            <FormField
+                                                                control={form.control}
+                                                                name={`variants.${variant.id}.sku`}
+                                                                render={({ field }) => (
+                                                                    <FormItem>
+                                                                        <FormControl>
+                                                                            <Input
+                                                                                {...field}
+                                                                                placeholder="SKU-123"
+                                                                                // min-w forces the input to be usable, triggering scroll if needed
+                                                                                className="h-9 w-full min-w-[120px]"
+                                                                            />
+                                                                        </FormControl>
+                                                                        <FormMessage className="text-[10px]" />
+                                                                    </FormItem>
+                                                                )}
                                                             />
-                                                        </FormControl>
-                                                        <FormMessage />
-                                                    </FormItem>
-                                                )}
-                                            />
-                                        </TableCell>
-                                    </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
-                    )}
-                </>
-            )}
+                                                        </TableCell>
+
+                                                        <TableCell>
+                                                            <FormField
+                                                                control={form.control}
+                                                                name={`variants.${variant.id}.price`}
+                                                                render={({ field }) => (
+                                                                    <FormItem>
+                                                                        <FormControl>
+                                                                            <MoneyInput
+                                                                                {...field}
+                                                                                value={
+                                                                                    Number(field.value) || 0
+                                                                                }
+                                                                                onChange={value =>
+                                                                                    field.onChange(
+                                                                                        value.toString(),
+                                                                                    )
+                                                                                }
+                                                                                currency={
+                                                                                    activeChannel?.defaultCurrencyCode
+                                                                                }
+                                                                                className="h-9 w-full min-w-[120px]"
+                                                                            />
+                                                                        </FormControl>
+                                                                        <FormMessage className="text-[10px]" />
+                                                                    </FormItem>
+                                                                )}
+                                                            />
+                                                        </TableCell>
+
+                                                        <TableCell>
+                                                            <FormField
+                                                                control={form.control}
+                                                                name={`variants.${variant.id}.stock`}
+                                                                render={({ field }) => (
+                                                                    <FormItem>
+                                                                        <FormControl>
+                                                                            <Input
+                                                                                {...field}
+                                                                                type="number"
+                                                                                min="0"
+                                                                                step="1"
+                                                                                className="h-9 w-full min-w-[80px]"
+                                                                                placeholder="0"
+                                                                            />
+                                                                        </FormControl>
+                                                                        <FormMessage className="text-[10px]" />
+                                                                    </FormItem>
+                                                                )}
+                                                            />
+                                                        </TableCell>
+                                                    </TableRow>
+                                                ))}
+                                            </TableBody>
+                                        </Table>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </>
+                )}
+            </div>
         </FormProvider>
     );
 }
 
-// Generate all possible combinations of option values
 function generateVariants(groups: OptionGroupConfiguration['optionGroups']): GeneratedVariant[] {
-    // If there are no groups, return a single variant with no options
     if (!groups.length)
         return [
             {
@@ -325,11 +372,21 @@ function generateVariants(groups: OptionGroupConfiguration['optionGroups']): Gen
             },
         ];
 
-    // Make sure all groups have at least one value
     const validGroups = groups.filter(group => group.name && group.values && group.values.length > 0);
-    if (!validGroups.length) return [];
+    if (!validGroups.length)
+        return [
+            {
+                id: 'default',
+                name: '',
+                values: [],
+                options: [],
+                enabled: true,
+                sku: '',
+                price: '',
+                stock: '',
+            },
+        ];
 
-    // Generate combinations
     const generateCombinations = (
         optionGroups: OptionGroupConfiguration['optionGroups'],
         currentIndex: number,
