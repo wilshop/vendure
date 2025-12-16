@@ -51,7 +51,7 @@ export function viteConfigPlugin({ packageRoot }: { packageRoot: string }): Plug
                 ...config.optimizeDeps,
                 exclude: [
                     ...(config.optimizeDeps?.exclude || []),
-                    '@vendure/dashboard',
+                    '@wilshop/dashboard',
                     '@/vdb',
                     'virtual:vendure-ui-config',
                     'virtual:admin-api-schema',

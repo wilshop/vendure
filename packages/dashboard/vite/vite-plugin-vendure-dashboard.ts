@@ -278,10 +278,10 @@ export function vendureDashboardPlugin(options: VitePluginVendureDashboardOption
 
 /**
  * @description
- * Returns the path to the root of the `@vendure/dashboard` package.
+ * Returns the path to the root of the `@wilshop/dashboard` package.
  */
 function getDashboardPackageRoot(): string {
-    const fileUrl = import.meta.resolve('@vendure/dashboard');
+    const fileUrl = import.meta.resolve('@wilshop/dashboard');
     const packagePath = fileUrl.startsWith('file:') ? new URL(fileUrl).pathname : fileUrl;
     return fixWindowsPath(path.join(packagePath, '../../../'));
 }
