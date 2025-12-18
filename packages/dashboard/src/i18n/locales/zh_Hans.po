@@ -14,11 +14,6 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: src/lib/components/data-input/string-list-input.tsx:237
-msgid "Type and press Enter or comma to add..."
-msgstr "输入并按 Enter 或逗号添加..."
-
-#. js-lingui-explicit-id
 #: src/lib/hooks/use-extended-detail-query.ts:23
 #: src/lib/hooks/use-extended-list-query.ts:64
 msgid "Query extension error"
@@ -225,6 +220,11 @@ msgstr "订单摘要小部件"
 #: src/lib/framework/alert/search-index-buffer-alert/search-index-buffer-alert.ts:35
 msgid "Running pending search index updates"
 msgstr "正在运行待处理的搜索索引更新"
+
+#. js-lingui-explicit-id
+#: src/lib/components/data-input/string-list-input.tsx:237
+msgid "Type and press Enter or comma to add..."
+msgstr ""
 
 #. js-lingui-explicit-id
 #: src/i18n/common-strings.ts:7
@@ -852,6 +852,10 @@ msgstr "添加另一个选项组"
 msgid "Add asset"
 msgstr "添加资源"
 
+#: src/lib/components/layout/channel-switcher.tsx:204
+msgid "Add channel"
+msgstr ""
+
 #: src/lib/components/shared/rich-text-editor/table-edit-icons.tsx:151
 msgid "Add column after"
 msgstr "在后面添加列"
@@ -1050,11 +1054,15 @@ msgstr "管理员"
 msgid "after"
 msgstr "之后"
 
+#: src/lib/components/shared/alerts.tsx:33
+msgid "Alerts"
+msgstr ""
+
 #: src/app/routes/_authenticated/_system/healthchecks.tsx:66
 msgid "All resources are up and running"
 msgstr "所有资源正在运行"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:412
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:411
 msgid "Allocated"
 msgstr "已分配"
 
@@ -1136,7 +1144,7 @@ msgstr "确定要离开此页面吗？任何未保存的更改都将丢失。"
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:51
 msgid "Are you sure you want to remove {0} {1} from this zone?"
-msgstr "您确定要从该区域移除 {0} {1} 吗？"
+msgstr ""
 
 #. placeholder {0}: selection.length
 #: src/lib/components/shared/remove-from-channel-bulk-action.tsx:84
@@ -1147,7 +1155,7 @@ msgstr "确定要从当前渠道中删除 {0} {entityType} 吗？"
 #: src/app/routes/_authenticated/_assets/assets.tsx:9
 #: src/app/routes/_authenticated/_assets/assets.tsx:30
 #: src/app/routes/_authenticated/_collections/collections_.$id.tsx:198
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:444
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:443
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:208
 msgid "Assets"
 msgstr "资源"
@@ -1182,7 +1190,7 @@ msgstr "可用货币"
 msgid "Available languages"
 msgstr "可用语言"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:322
+#: src/lib/components/layout/manage-languages-dialog.tsx:345
 msgid "Available Languages"
 msgstr "可用语言"
 
@@ -1248,7 +1256,7 @@ msgstr "计算器"
 #: src/lib/components/data-table/use-generated-columns.tsx:359
 #: src/lib/components/data-table/views-sheet.tsx:217
 #: src/lib/components/data-table/views-sheet.tsx:295
-#: src/lib/components/layout/manage-languages-dialog.tsx:377
+#: src/lib/components/layout/manage-languages-dialog.tsx:400
 #: src/lib/components/shared/asset/asset-focal-point-editor.tsx:88
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:122
 #: src/lib/components/shared/confirmation-dialog.tsx:43
@@ -1283,7 +1291,7 @@ msgstr "渠道"
 msgid "Channel defaults"
 msgstr "渠道默认值"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:305
+#: src/lib/components/layout/manage-languages-dialog.tsx:328
 msgid "Channel Languages"
 msgstr "渠道语言"
 
@@ -1306,7 +1314,7 @@ msgid "Clear"
 msgstr "清除"
 
 #: src/app/routes/_authenticated/_assets/components/asset-tag-filter.tsx:180
-#: src/lib/components/data-table/data-table.tsx:305
+#: src/lib/components/data-table/data-table.tsx:304
 msgid "Clear all"
 msgstr "全部清除"
 
@@ -1324,6 +1332,7 @@ msgstr "点击\"运行测试\"以测试此配送方式。"
 
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:136
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:114
+#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:141
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:130
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:157
@@ -1369,7 +1378,7 @@ msgstr "完成草稿"
 msgid "Conditions"
 msgstr "条件"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:243
+#: src/lib/components/layout/manage-languages-dialog.tsx:266
 msgid "Configure available languages for your store and channels"
 msgstr "为您的商店和渠道配置可用语言"
 
@@ -1443,7 +1452,7 @@ msgstr "已为订单设置优惠券代码"
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:113
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:102
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:200
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -1616,7 +1625,7 @@ msgstr "默认货币"
 msgid "Default language"
 msgstr "默认语言"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:350
+#: src/lib/components/layout/manage-languages-dialog.tsx:373
 msgid "Default Language"
 msgstr "默认语言"
 
@@ -1722,7 +1731,7 @@ msgstr "折扣"
 msgid "Display language"
 msgstr "显示语言"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:345
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:344
 msgid "Do not track"
 msgstr "不跟踪"
 
@@ -1858,7 +1867,7 @@ msgstr "启用"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:96
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:140
 #: src/app/routes/_authenticated/_payment-methods/payment-methods.tsx:43
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:226
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:121
 #: src/app/routes/_authenticated/_promotions/promotions_.$id.tsx:146
 #: src/app/routes/_authenticated/_system/scheduled-tasks.tsx:113
@@ -1949,7 +1958,7 @@ msgstr "属性"
 msgid "Facet values"
 msgstr "属性值"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:427
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:426
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:199
 msgid "Facet Values"
 msgstr "属性值"
@@ -2057,7 +2066,7 @@ msgstr "创建商品选项组失败"
 msgid "Failed to create product options"
 msgstr "创建商品选项失败"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:174
 msgid "Failed to create product variant"
 msgstr "创建商品变体失败"
@@ -2138,7 +2147,7 @@ msgstr "复制视图失败"
 msgid "Failed to fulfill order"
 msgstr "履行订单失败"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:272
+#: src/lib/components/layout/manage-languages-dialog.tsx:295
 msgid "Failed to load global settings"
 msgstr "加载全局设置失败"
 
@@ -2152,7 +2161,7 @@ msgstr "移动集合失败"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:36
 msgid "Failed to remove countries from zone"
-msgstr "无法从区域移除国家"
+msgstr ""
 
 #: src/app/routes/_authenticated/_customers/customers_.$id.tsx:139
 msgid "Failed to remove customer from group"
@@ -2262,7 +2271,7 @@ msgstr "更新产品选项失败"
 msgid "Failed to update product option group"
 msgstr "更新商品选项组失败"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:128
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:127
 msgid "Failed to update product variant"
 msgstr "更新商品变体失败"
 
@@ -2407,7 +2416,7 @@ msgstr "履行已转换"
 msgid "Full Name"
 msgstr "全名"
 
-#: src/lib/components/shared/custom-fields-form.tsx:101
+#: src/lib/components/shared/custom-fields-form.tsx:100
 msgid "General"
 msgstr "常规"
 
@@ -2416,7 +2425,7 @@ msgstr "常规"
 msgid "Generate slug automatically"
 msgstr "自动生成 slug"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:252
+#: src/lib/components/layout/manage-languages-dialog.tsx:275
 msgid "Global Languages"
 msgstr "全局语言"
 
@@ -2537,7 +2546,7 @@ msgstr "在"
 msgid "Inherit filters"
 msgstr "继承筛选器"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:339
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:338
 msgid "Inherit from global settings"
 msgstr "从全局设置继承"
 
@@ -2700,7 +2709,7 @@ msgstr "正在加载地址..."
 msgid "Loading collections..."
 msgstr "正在加载集合..."
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:266
+#: src/lib/components/layout/manage-languages-dialog.tsx:289
 msgid "Loading global settings..."
 msgstr "正在加载全局设置..."
 
@@ -2748,7 +2757,7 @@ msgid "Manage Global Views"
 msgstr "管理全局视图"
 
 #: src/lib/components/layout/channel-switcher.tsx:185
-#: src/lib/components/layout/manage-languages-dialog.tsx:240
+#: src/lib/components/layout/manage-languages-dialog.tsx:263
 msgid "Manage Languages"
 msgstr "管理语言"
 
@@ -2852,6 +2861,7 @@ msgstr "我的保存视图"
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:108
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:107
 #: src/app/routes/_authenticated/_customers/customers.tsx:72
+#: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:104
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:135
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:124
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:151
@@ -2976,7 +2986,7 @@ msgstr "新商品选项"
 msgid "New product option group"
 msgstr "新商品选项组"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:208
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:207
 msgid "New product variant"
 msgstr "新商品变体"
 
@@ -3073,7 +3083,7 @@ msgstr "无地址"
 msgid "No addresses found"
 msgstr "未找到地址"
 
-#: src/lib/components/shared/alerts.tsx:43
+#: src/lib/components/shared/alerts.tsx:45
 msgid "No alerts"
 msgstr "无提醒"
 
@@ -3110,7 +3120,7 @@ msgstr "无属性值"
 msgid "No fulfillments"
 msgstr "无履行"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:336
+#: src/lib/components/layout/manage-languages-dialog.tsx:359
 msgid "No global languages configured"
 msgstr "未配置全局语言"
 
@@ -3156,7 +3166,7 @@ msgstr "不需要支付或退款"
 msgid "No result yet"
 msgstr "尚无结果"
 
-#: src/lib/components/data-table/data-table.tsx:366
+#: src/lib/components/data-table/data-table.tsx:365
 #: src/lib/components/shared/customer-group-selector.tsx:58
 msgid "No results"
 msgstr "无结果"
@@ -3365,7 +3375,7 @@ msgstr "订单"
 msgid "Orders Summary"
 msgstr "订单摘要"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:354
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:353
 msgid "Out-of-stock threshold"
 msgstr "缺货阈值"
 
@@ -3375,7 +3385,7 @@ msgstr "缺货阈值"
 msgid "Page {0} of {1}"
 msgstr "第 {0} 页，共 {1} 页"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:437
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:436
 msgid "Parent product"
 msgstr "父级产品"
 
@@ -3511,14 +3521,14 @@ msgid "Preview order modifications"
 msgstr "预览订单修改"
 
 #: src/app/routes/_authenticated/_orders/components/shipping-method-selector.tsx:49
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:273
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:272
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:340
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:212
 #: src/lib/components/layout/language-dialog.tsx:121
 msgid "Price"
 msgstr "价格"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:253
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:252
 msgid "Price and tax"
 msgstr "价格和税费"
 
@@ -3693,7 +3703,7 @@ msgstr "从当前渠道中删除"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:49
 msgid "Remove from zone"
-msgstr "从区域移除"
+msgstr ""
 
 #: src/app/routes/_authenticated/_products/components/create-product-options-dialog.tsx:278
 msgid "Remove group"
@@ -3711,7 +3721,7 @@ msgstr "删除链接"
 #. placeholder {1}: selection.length === 1 ? 'country' : 'countries'
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:31
 msgid "Removed {0} {1} from zone"
-msgstr "已从区域移除 {0} {1}"
+msgstr ""
 
 #: src/app/routes/_authenticated/_orders/components/order-modification-summary.tsx:200
 msgid "Removed coupon codes"
@@ -3787,11 +3797,11 @@ msgid "Save Address"
 msgstr "保存地址"
 
 #: src/app/routes/_authenticated/_facets/components/edit-facet-value.tsx:122
-#~ msgid "Save changes"
-#~ msgstr "保存更改"
+msgid "Save changes"
+msgstr "保存更改"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:380
+#: src/lib/components/layout/manage-languages-dialog.tsx:403
 msgid "Save Changes"
 msgstr "保存更改"
 
@@ -3808,7 +3818,7 @@ msgid "Save View"
 msgstr "保存视图"
 
 #: src/app/routes/_authenticated/_assets/components/manage-tags-dialog.tsx:206
-#: src/lib/components/layout/manage-languages-dialog.tsx:380
+#: src/lib/components/layout/manage-languages-dialog.tsx:403
 msgid "Saving..."
 msgstr "正在保存..."
 
@@ -3942,7 +3952,7 @@ msgstr "选择一个地址"
 msgid "Select an option"
 msgstr "选择一个选项"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:278
+#: src/lib/components/layout/manage-languages-dialog.tsx:301
 msgid "Select Available Languages"
 msgstr "选择可用语言"
 
@@ -3962,7 +3972,7 @@ msgstr "选择日期范围"
 msgid "Select display language"
 msgstr "选择显示语言"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:340
+#: src/lib/components/layout/manage-languages-dialog.tsx:363
 msgid "Select from globally available languages for this channel"
 msgstr "从此渠道的全局可用语言中选择"
 
@@ -4037,8 +4047,8 @@ msgstr "设置所有渠道可用的语言。然后，各个渠道可以支持这
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "设置将此变体视为缺货的库存水平。使用负值可启用延期交货支持。可由商品变体覆盖。"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:356
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:374
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:355
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:373
 msgid "Sets the stock level at which this variant is considered to be out of stock. Using a negative value enables backorder support."
 msgstr "设置将此变体视为缺货的库存水平。使用负值可启用延期交货支持。"
 
@@ -4123,7 +4133,7 @@ msgid "Sign in to access the admin dashboard"
 msgstr "登录以访问管理仪表板"
 
 #: src/app/routes/_authenticated/_orders/components/edit-order-table.tsx:96
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:246
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:245
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:334
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:195
 #: src/app/routes/_authenticated/_products/components/create-product-variants.tsx:209
@@ -4177,7 +4187,7 @@ msgstr "州/省"
 msgid "Status"
 msgstr "状态"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:317
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:316
 msgid "Stock"
 msgstr "库存"
 
@@ -4185,12 +4195,12 @@ msgstr "库存"
 msgid "Stock allocated"
 msgstr "库存已分配"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:397
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:396
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:353
 msgid "Stock level"
 msgstr "库存水平"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:322
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:321
 msgid "Stock levels"
 msgstr "库存水平"
 
@@ -4294,7 +4304,7 @@ msgstr "成功创建商品选项组"
 msgid "Successfully created product options"
 msgstr "已成功创建商品选项"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:117
 #: src/app/routes/_authenticated/_products/components/add-product-variant-dialog.tsx:169
 msgid "Successfully created product variant"
 msgstr "已成功创建商品变体"
@@ -4412,7 +4422,7 @@ msgstr "成功更新产品选项"
 msgid "Successfully updated product option group"
 msgstr "成功更新商品选项组"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:119
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:118
 msgid "Successfully updated product variant"
 msgstr "已成功更新商品变体"
 
@@ -4483,7 +4493,7 @@ msgstr "税基"
 msgid "Tax Categories"
 msgstr "税务类别"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:258
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:257
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:137
 msgid "Tax category"
 msgstr "税务类别"
@@ -4585,7 +4595,7 @@ msgstr "这些是 <0>{customerGroupName}</0> 客户组中的客户。"
 msgid "These are the facet values for the <0>{facetName}</0> facet."
 msgstr "这些是 <0>{facetName}</0> 属性的属性值。"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:293
+#: src/lib/components/layout/manage-languages-dialog.tsx:316
 msgid "These languages will be available for all channels to use"
 msgstr "这些语言将可供所有渠道使用"
 
@@ -4666,7 +4676,7 @@ msgstr "退款总计："
 msgid "Total Revenue"
 msgstr "总收入"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:342
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:341
 msgid "Track"
 msgstr "跟踪"
 
@@ -4744,7 +4754,7 @@ msgstr "未验证"
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:101
 #: src/app/routes/_authenticated/_orders/components/order-line-custom-fields-form.tsx:46
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:130
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:217
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:216
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:276
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:111
 #: src/app/routes/_authenticated/_products/products_.$productId.option-groups.$id.tsx:138
@@ -4788,7 +4798,7 @@ msgstr "用作默认账单地址"
 msgid "Use as the default shipping address"
 msgstr "用作默认配送地址"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:372
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:371
 msgid "Use global out-of-stock threshold"
 msgstr "使用全局缺货阈值"
 
@@ -4820,7 +4830,7 @@ msgstr "变体"
 msgid "Variant deleted successfully"
 msgstr "变体已成功删除"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:239
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:238
 msgid "Variant name"
 msgstr "变体名称"
 
@@ -4899,7 +4909,7 @@ msgstr "客户可见"
 msgid "Welcome to Vendure"
 msgstr "欢迎使用 Vendure"
 
-#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:228
+#: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:227
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:122
 msgid "When enabled, a product is available in the shop"
 msgstr "启用后，商品在商店中可用"
@@ -4930,11 +4940,11 @@ msgctxt "date-range"
 msgid "Yesterday"
 msgstr "昨天"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:315
+#: src/lib/components/layout/manage-languages-dialog.tsx:338
 msgid "You don't have permission to view channel settings"
 msgstr "您没有查看渠道设置的权限"
 
-#: src/lib/components/layout/manage-languages-dialog.tsx:261
+#: src/lib/components/layout/manage-languages-dialog.tsx:284
 msgid "You don't have permission to view global language settings"
 msgstr "您没有查看全局语言设置的权限"
 
