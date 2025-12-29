@@ -46,12 +46,18 @@ export function useLocalFormat() {
 
     const formatCurrency = useCallback(
         (value: number, currency: string, precision?: number) => {
-            return new Intl.NumberFormat(locale, {
+            const formatted = new Intl.NumberFormat(locale, {
                 style: 'currency',
                 currency,
                 minimumFractionDigits: precision ?? moneyStrategyPrecision,
                 maximumFractionDigits: precision ?? moneyStrategyPrecision,
             }).format(toMajorUnits(value));
+
+            if (currency === 'CUP') {
+                return formatted.replace('$', '₱');
+            }
+
+            return formatted;
         },
         [locale, moneyStrategyPrecision, toMajorUnits],
     );
@@ -142,16 +148,21 @@ export function useLocalFormat() {
                         ? (new Intl.DisplayNames([locale], { type: 'currency' }).of(currencyCode) ?? '')
                         : '';
 
-                const symbol =
-                    display === 'full' || display === 'symbol'
-                        ? (new Intl.NumberFormat(locale, {
-                              style: 'currency',
-                              currency: currencyCode,
-                              currencyDisplay: 'symbol',
-                          })
-                              .formatToParts()
-                              .find(p => p.type === 'currency')?.value ?? currencyCode)
-                        : '';
+                let symbol = '';
+                if (display === 'full' || display === 'symbol') {
+                    if (currencyCode === 'CUP') {
+                        symbol = '₱';
+                    } else {
+                        symbol =
+                            new Intl.NumberFormat(locale, {
+                                style: 'currency',
+                                currency: currencyCode,
+                                currencyDisplay: 'symbol',
+                            })
+                                .formatToParts()
+                                .find(p => p.type === 'currency')?.value ?? currencyCode;
+                    }
+                }
 
                 return display === 'full' ? `${name} (${symbol})` : display === 'name' ? name : symbol;
             } catch (e) {

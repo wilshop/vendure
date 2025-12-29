@@ -57,6 +57,11 @@ export function MoneyInput(props: Readonly<MoneyInputProps>) {
     // Get the currency symbol
     const currencySymbol = useMemo(() => {
         if (!activeCurrency) return '';
+
+        if (activeCurrency === 'CUP') {
+            return '₱';
+        }
+
         const parts = new Intl.NumberFormat(bcp47Tag, {
             style: 'currency',
             currency: activeCurrency,
@@ -68,7 +73,7 @@ export function MoneyInput(props: Readonly<MoneyInputProps>) {
     return (
         <AffixedInput
             type="text"
-            className={cn("bg-background", className)}
+            className={cn('bg-background', className)}
             value={displayValue}
             disabled={readOnly}
             {...rest}
